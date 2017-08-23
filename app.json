@@ -1,0 +1,11 @@
+{
+  "name": "Start on Heroku: Go",
+  "description": "Go Getting Started Example App",
+  "keywords": [
+    "go",
+  ],
+  "image": "heroku/go:1.6",
+  "mount_dir": "src/github.com/korasdor/colarit",
+  "website": "http://github.com/korasdor/colarit",
+  "repository": "http://github.com/korasdor/colarit"
+}
