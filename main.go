@@ -1,29 +1,33 @@
 package main
 
 import (
-	"log"
+	"fmt"
 	"net/http"
 	"os"
+	"runtime"
 
-	"github.com/gin-gonic/gin"
-	_ "github.com/heroku/x/hmetrics/onload"
+	"github.com/gorilla/mux"
 )
 
 func main() {
+
 	port := os.Getenv("PORT")
 
+
 	if port == "" {
-		log.Fatal("$PORT must be set")
+		port = "8080"
 	}
 
-	router := gin.New()
-	router.Use(gin.Logger())
-	router.LoadHTMLGlob("templates/*.tmpl.html")
-	router.Static("/static", "static")
+	fmt.Printf("listening on %s...", ":"+port)
+	http.HandleFunc("/", hello)
+	err := http.ListenAndServe(":"+port, nil)
+	if err != nil {
+		panic(err)
+	}
+}
 
-	router.GET("/", func(c *gin.Context) {
-		c.HTML(http.StatusOK, "index.tmpl.html", nil)
-	})
+func hello(res http.ResponseWriter, req *http.Request) {
+	mux.Vars(req)
 
-	router.Run(":" + port)
+	fmt.Fprintf(res, "hello, world from %s", runtime.Version())
 }
