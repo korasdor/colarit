@@ -3,8 +3,10 @@
 	"ignore": "test",
 	"package": [
 		{
-			"path": "context",
-			"revision": ""
+			"checksumSHA1": "3YCnHMM622cPWm+IkU2MydOvUZo=",
+			"path": "github.com/go-sql-driver/mysql",
+			"revision": "26471af196a17ee75a22e6481b5a5897fb16b081",
+			"revisionTime": "2017-08-22T21:48:09Z"
 		},
 		{
 			"checksumSHA1": "IkPM2QLv9urri7S49wzroQx9oXA=",
@@ -17,6 +19,42 @@
 			"path": "github.com/gorilla/mux",
 			"revision": "ac112f7d75a0714af1bd86ab17749b31f7809640",
 			"revisionTime": "2017-07-03T15:07:09Z"
+		},
+		{
+			"checksumSHA1": "RgLystvQahvPG++RZgQwwX8lkAY=",
+			"path": "github.com/oschwald/geoip2-golang",
+			"revision": "5b1dc16861f81d05d9836bb21c2d0d65282fc0b8",
+			"revisionTime": "2017-04-23T21:58:58Z"
+		},
+		{
+			"checksumSHA1": "pV5wSM18mTu9YDWKbWwXtcfdmTQ=",
+			"path": "github.com/oschwald/maxminddb-golang",
+			"revision": "d19f6d453e836d12ee8fe895d0494421e93ef8c1",
+			"revisionTime": "2017-05-03T13:30:35Z"
+		},
+		{
+			"checksumSHA1": "2N+zaafLJbM/BcU+j+/BER6Yiwk=",
+			"path": "golang.org/x/sys/unix",
+			"revision": "07c182904dbd53199946ba614a412c61d3c548f5",
+			"revisionTime": "2017-08-16T12:26:40Z"
+		},
+		{
+			"checksumSHA1": "gVfCD++7aVcdKF2spv6XkEM/wYw=",
+			"path": "golang.org/x/sys/windows",
+			"revision": "07c182904dbd53199946ba614a412c61d3c548f5",
+			"revisionTime": "2017-08-16T12:26:40Z"
+		},
+		{
+			"checksumSHA1": "L0i3W5A4DlPYT648m6tewQZElvk=",
+			"path": "gopkg.in/alexcesaro/quotedprintable.v3",
+			"revision": "2caba252f4dc53eaf6b553000885530023f54623",
+			"revisionTime": "2015-07-16T17:19:45Z"
+		},
+		{
+			"checksumSHA1": "Q24+t5ryUvt5JJPtPKim1q8hwmI=",
+			"path": "gopkg.in/gomail.v2",
+			"revision": "81ebce5c23dfd25c6c67194b37d3dd3f338c98b1",
+			"revisionTime": "2016-04-11T21:29:32Z"
 		}
 	],
 	"rootPath": "github.com/korasdor/colarit"
