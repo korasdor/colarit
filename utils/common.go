@@ -2,7 +2,6 @@ package utils
 
 import (
 	"fmt"
-	"os"
 	"github.com/oschwald/geoip2-golang"
 	"net"
 	"io/ioutil"
@@ -11,32 +10,11 @@ import (
 )
 
 var (
-	ROOT_PATH string = ""
+	ROOT_PATH           string = ""
 	GEO_LITE_FILE_PATH  string = ROOT_PATH + "static/data/GeoLite2-Country.mmdb"
 	TEMPLATE_LOCAL_PATH string = ROOT_PATH + "templates/books.json"
 	TEMPLATE_REMOTE_URL string = "http://colarit.com/colar/templates/books.json"
 )
-
-func GetDBAddress() string {
-	var dbAddress string
-
-	// korasdor:19841986aA@tcp(127.0.0.1:3306)/im
-	if os.Getenv("OPENSHIFT_MYSQL_DB_USERNAME") == "" {
-		dbAddress = fmt.Sprintf("%s:%s@tcp(%s:%s)/%s", "korasdor", "19841986aA", "127.0.0.1", "3306", "colar_db")
-	} else {
-		dbAddress = fmt.Sprintf("%s:%s@tcp(%s:%s)/%s", os.Getenv("OPENSHIFT_MYSQL_DB_USERNAME"),
-			os.Getenv("OPENSHIFT_MYSQL_DB_PASSWORD"),
-			os.Getenv("OPENSHIFT_MYSQL_DB_HOST"),
-			os.Getenv("OPENSHIFT_MYSQL_DB_PORT"),
-			"ar")
-	}
-
-	return dbAddress
-}
-
-func GetTempDir() string {
-	return os.Getenv("OPENSHIFT_TMP_DIR")
-}
 
 
 func GetCountry(clientIp string) string {

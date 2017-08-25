@@ -6,7 +6,6 @@ import (
 	"runtime"
 
 	"github.com/gorilla/mux"
-	"github.com/korasdor/colarit/model"
 	"github.com/korasdor/colarit/handler"
 	"github.com/korasdor/colarit/services"
 	"os"
@@ -14,9 +13,6 @@ import (
 
 func main() {
 	runtime.GOMAXPROCS(runtime.NumCPU())
-
-	m := model.New()
-	handler.Model = m
 
 	services.InitDb()
 	defer services.CloseDb()
@@ -28,16 +24,14 @@ func main() {
 
 	r := mux.NewRouter()
 	r.HandleFunc("/", handler.IndexHandler)
-	r.HandleFunc("/test", handler.TestHandler)
 	r.HandleFunc("/db_state", handler.DBStateHandler)
 	r.HandleFunc("/books", handler.BooksHandler)
 	r.HandleFunc("/update_books_template", handler.UpdateBooksHandler)
-	r.HandleFunc("/get_temp/{file_name}", handler.GetTempHandler)
 
-	r.HandleFunc("/create_serial/{serials_name}/{serials_count}", handler.CreateSerialsHandler)
+	r.HandleFunc("/create_table/{table_name}/{access_token}", handler.CreateTableHandler)
+	r.HandleFunc("/fill_table/{table_name}/{serials_count}/{range_id}/{dealer_id}/{access_token}", handler.FillTableHandler)
+
 	r.HandleFunc("/get_serial/{serials_name}/{serials_format}", handler.GetSerialsHandler)
-	r.HandleFunc("/create_table/{serials_name}/{table_name}", handler.CreateTableHandler)
-	r.HandleFunc("/fill_table/{serials_name}/{table_name}/{dealer_id}", handler.FillTableHandler)
 
 	r.HandleFunc("/activate_serial/{table_name}/{serial_key}", handler.ActivateSerialsHandler)
 	r.HandleFunc("/reset_serial/{table_name}/{serial_key}", handler.ResetSerialsHandler)

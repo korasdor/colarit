@@ -10,11 +10,6 @@ import (
 	"github.com/korasdor/colarit/model"
 	"github.com/korasdor/colarit/utils"
 	"github.com/korasdor/colarit/services"
-	"os"
-)
-
-var (
-	Model *model.Model
 )
 
 /**
@@ -29,22 +24,6 @@ func ServeStaticFiles(w http.ResponseWriter, r *http.Request) {
  */
 func IndexHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "%s", "index page in construction...")
-}
-
-func TestHandler(w http.ResponseWriter, r *http.Request) {
-
-	err:= os.Mkdir("serials", 0644)
-	if err != nil {
-		utils.PrintOutput(err.Error())
-	}
-
-	files, _ := ioutil.ReadDir("../")
-	content := ""
-	for _, f := range files {
-		content += fmt.Sprintf("%s\n", f.Name())
-	}
-
-	fmt.Fprint(w, content)
 }
 
 /**
@@ -79,38 +58,63 @@ func UpdateBooksHandler(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-/**
- *
- */
-func GetTempHandler(w http.ResponseWriter, r *http.Request) {
-	vars := mux.Vars(r)
-	serialsName := vars["file_name"]
 
-	b, err := ioutil.ReadFile(utils.GetTempDir() + serialsName)
-	if err != nil {
-		utils.PrintOutput(err.Error())
-	}
-
-	fmt.Fprint(w, b)
-}
 
 /**
- * создаем серийники и сохраняем в файл
+ * создаем таблицу
  */
-func CreateSerialsHandler(w http.ResponseWriter, r *http.Request) {
+func CreateTableHandler(w http.ResponseWriter, r *http.Request) {
+	var output string
+
 	vars := mux.Vars(r)
-	serialsName := vars["serials_name"]
-	serialsCount, err := strconv.Atoi(vars["serials_count"])
-	if err != nil {
-		fmt.Fprintf(w, "%s is incorect value", vars["serials_count"])
-	} else {
-		if services.CreateSerialKeys(serialsName, serialsCount) {
-			fmt.Fprintf(w, "%s is created", serialsName)
+	tableName := vars["table_name"]
+	accessToken := vars["access_token"]
+
+	if accessToken == model.ACCESS_TOKEN {
+		if services.CreateSerialsTable(tableName) {
+			output = fmt.Sprintf("{ \"message\":\"Table %s is successfully created\"}", tableName)
 		} else {
-			fmt.Fprintf(w, "%s is exist", serialsName)
+			output = fmt.Sprintf("{ \"error\": \"2\", \"message\":\"Error creating table with name %s\"}", tableName)
 		}
+	} else {
+		output = fmt.Sprintf("{ \"error\": \"1\", \"message\":\"Incorrect access token. Token %s incorrect\"}", accessToken)
 	}
+
+	fmt.Fprint(w, output)
 }
+
+/**
+ * заполняем таблицу
+ */
+func FillTableHandler(w http.ResponseWriter, r *http.Request) {
+	var output string
+
+	vars := mux.Vars(r)
+	accessToken := vars["access_token"]
+
+	if accessToken == model.ACCESS_TOKEN {
+		rangeId := vars["range_id"]
+		tableName := vars["table_name"]
+		dealerId := vars["dealer_id"]
+
+		serialsCount, err := strconv.Atoi(vars["serials_count"])
+		if err != nil {
+			fmt.Fprintf(w, "%s", "table fill complete")
+		} else {
+			serials := services.CreateSerials(serialsCount)
+			if services.FillSerialsTable(tableName, serials, dealerId, rangeId) {
+				output = fmt.Sprintf("{ \"message\":\"Table %s is filled successfully\"}", tableName)
+			} else {
+				output = fmt.Sprintf("{ \"error\": \"2\", \"message\":\"Table %s filling error\"}", tableName)
+			}
+		}
+	} else {
+		output = fmt.Sprintf("{ \"error\": \"1\", \"message\":\"Incorrect access token. Token %s incorrect\"}", accessToken)
+	}
+
+	fmt.Fprint(w, output)
+}
+
 
 /**
  * получить файл с серийниками
@@ -133,38 +137,8 @@ func GetSerialsHandler(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-/**
- * создаем таблицу
- */
-func CreateTableHandler(w http.ResponseWriter, r *http.Request) {
-	vars := mux.Vars(r)
-	serialsName := vars["serials_name"]
-	tableName := vars["table_name"]
 
-	if services.CreateTable(tableName, serialsName) {
-		fmt.Fprintf(w, "%s table is created", tableName)
-	} else {
-		fmt.Fprintf(w, "%s", "error")
-	}
-}
 
-func FillTableHandler(w http.ResponseWriter, r *http.Request) {
-	vars := mux.Vars(r)
-	serialsName := vars["serials_name"]
-	tableName := vars["table_name"]
-	dealerId := vars["dealer_id"]
-	serials, err := services.GetSerials(serialsName)
-	if err != nil {
-		fmt.Fprintf(w, "%s", "error read file")
-	} else {
-		if services.FillSerialTable(tableName, serials, dealerId) {
-			fmt.Fprintf(w, "%s", "table fill complete")
-		} else {
-			fmt.Fprintf(w, "%s", "error fill table")
-		}
-	}
-
-}
 
 /**
  * активация серийника
@@ -224,6 +198,9 @@ func AboutSerialsHandler(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprint(w, "в данной таблице, не существует заданный серийный ключ")
 	}
 }
+
+
+/******************************************************MISC*****************************************************************/
 
 /**
  * отправляем почту
