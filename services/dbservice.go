@@ -20,6 +20,7 @@ func InitDb() {
 	var err error
 
 	db, err = sql.Open("mysql", model.DB_SOURCE_NAME)
+	//db.SetConnMaxLifetime(0)
 	db.SetMaxIdleConns(0)
 	if err != nil {
 		model.DbSuccess = "error"
@@ -76,8 +77,6 @@ func FillSerialsTable(tableName string, serials []string, dealerId string, range
 			values += fmt.Sprintf("('%s',0,3,NULL,%s, %s)", serialHash, dealerId, rangeId)
 		}
 	}
-
-	db.Ping()
 
 	stmt, err := db.Prepare("INSERT INTO " + tableName + "(serial_key,serial_activated,max_activations,serial_activated_time,dealer_id,range_id) VALUES " + values)
 	defer stmt.Close()
