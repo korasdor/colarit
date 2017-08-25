@@ -20,8 +20,8 @@ func InitDb() {
 	var err error
 
 	db, err = sql.Open("mysql", model.DB_SOURCE_NAME)
-	//db.SetConnMaxLifetime(0)
 	db.SetMaxIdleConns(0)
+
 	if err != nil {
 		model.DbSuccess = "error"
 		utils.PrintOutput(err.Error())
