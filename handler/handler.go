@@ -6,7 +6,6 @@ import (
 	"gopkg.in/gomail.v2"
 	"github.com/gorilla/mux"
 	"strconv"
-	"io/ioutil"
 	"github.com/korasdor/colarit/model"
 	"github.com/korasdor/colarit/utils"
 	"github.com/korasdor/colarit/services"
@@ -57,8 +56,6 @@ func UpdateBooksHandler(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprint(w, "bad")
 	}
 }
-
-
 
 /**
  * создаем таблицу
@@ -115,30 +112,51 @@ func FillTableHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprint(w, output)
 }
 
-
 /**
  * получить файл с серийниками
  */
 func GetSerialsHandler(w http.ResponseWriter, r *http.Request) {
+	var output string
+
 	vars := mux.Vars(r)
-	serialsName := vars["serials_name"]
+	accessToken := vars["access_token"]
+	rangeId := vars["range_id"]
+
+	tableName := vars["table_name"]
 	serialFormat := vars["serials_format"]
 
-	if serialFormat == "csv" {
-		b, err := ioutil.ReadFile(utils.ROOT_PATH + "serials/" + serialsName + "." + serialFormat)
+	if accessToken == model.ACCESS_TOKEN {
+		serials, err := services.GetSerialsRange(tableName, rangeId)
+
 		if err != nil {
-			utils.PrintOutput(err.Error())
+			output = fmt.Sprintf("{ \"error\": \"2\", \"message\":\"An error occurred when obtaining the serial numbers in the table %s and rage %s\"}", tableName, rangeId)
+		} else {
+			dealerId, err := strconv.Atoi(vars["dealer_id"])
+			if err != nil {
+				output = fmt.Sprintf("{ \"error\": \"1\", \"message\":\"Incorrect dealer id. Dealer id %s incorrect\"}", vars["dealer_id"])
+			} else {
+				resultString, err := utils.FormatSerials(serials, serialFormat)
+				if err != nil {
+					output = fmt.Sprintf("{ \"error\": \"2\", \"message\":\"Format %s unsupported\"}", serialFormat)
+				} else {
+					if last := len(resultString) - 1; last >= 0 {
+						resultString = resultString[:last]
+					}
+
+					downloadFileName := tableName + "_" + utils.GetDealerName(dealerId) + "_" + rangeId + ".csv"
+
+					w.Header().Set("Content-Type", "text/csv")
+					w.Header().Set("Content-Disposition", "attachment; filename="+downloadFileName)
+					fmt.Fprint(w, resultString)
+				}
+			}
 		}
-
-		w.Header().Set("Content-Type", "text/csv")
-		fmt.Fprint(w, string(b))
 	} else {
-		fmt.Fprintf(w, "%s", "this format if unsupported")
+		output = fmt.Sprintf("{ \"error\": \"1\", \"message\":\"Incorrect access token. Token %s incorrect\"}", accessToken)
 	}
+
+	fmt.Fprint(w, output)
 }
-
-
-
 
 /**
  * активация серийника
@@ -198,7 +216,6 @@ func AboutSerialsHandler(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprint(w, "в данной таблице, не существует заданный серийный ключ")
 	}
 }
-
 
 /******************************************************MISC*****************************************************************/
 

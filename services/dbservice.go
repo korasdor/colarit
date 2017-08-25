@@ -5,16 +5,11 @@ import (
 	"fmt"
 	_ "github.com/go-sql-driver/mysql"
 	"time"
-	"crypto/sha1"
-	"hash"
 	"github.com/korasdor/colarit/utils"
 	"github.com/korasdor/colarit/model"
 )
 
-var (
-	db    *sql.DB
-	mHash hash.Hash
-)
+var db *sql.DB
 
 func InitDb() {
 	var err error
@@ -66,15 +61,10 @@ func FillSerialsTable(tableName string, serials []string, dealerId string, range
 	var values string
 
 	for i := 0; i < len(serials); i++ {
-		mHash = sha1.New()
-		mHash.Write([]byte(serials[i]))
-
-		serialHash := fmt.Sprintf("%x", mHash.Sum(nil))
-
 		if i < len(serials)-1 {
-			values += fmt.Sprintf("('%s',0,3,NULL,%s, %s),", serialHash, dealerId, rangeId)
+			values += fmt.Sprintf("('%s',0,3,NULL,%s, %s),", serials[i], dealerId, rangeId)
 		} else {
-			values += fmt.Sprintf("('%s',0,3,NULL,%s, %s)", serialHash, dealerId, rangeId)
+			values += fmt.Sprintf("('%s',0,3,NULL,%s, %s)", serials[i], dealerId, rangeId)
 		}
 	}
 
@@ -97,21 +87,43 @@ func FillSerialsTable(tableName string, serials []string, dealerId string, range
 	return true
 }
 
+func GetSerialsRange(tableName string, rangeId string) ([]string, error) {
+	var serials []string
+
+	rows, err := db.Query("SELECT serial_key FROM "+tableName+" WHERE range_id=?", rangeId)
+	defer rows.Close()
+
+	if err != nil {
+		utils.PrintOutput(err.Error())
+
+		return serials, err
+	}
+
+	for rows.Next() == true {
+		var serialKey string
+
+		err := rows.Scan(&serialKey)
+		if err != nil {
+			utils.PrintOutput(err.Error())
+		} else {
+			serials = append(serials, serialKey)
+		}
+	}
+
+	return serials, err
+}
+
 func SerialCheck(tableName string, key string) (bool, int) {
 	result := false
 	serialActivated := -1
 
-	mHash = sha1.New()
-	mHash.Write([]byte(key))
-	serialHash := fmt.Sprintf("%x", mHash.Sum(nil))
+	rows, err := db.Query("SELECT serial_activated,serial_key,max_activations FROM "+tableName+" WHERE serial_key=?", key)
+	defer rows.Close()
 
-	rows, err := db.Query("SELECT serial_activated,serial_key,max_activations FROM "+tableName+" WHERE serial_key=?", serialHash)
 	if err != nil {
 		result = false
 		utils.PrintOutput(err.Error())
 	}
-
-	defer rows.Close()
 
 	if rows.Next() == true {
 		result = true
@@ -139,20 +151,15 @@ func SerialUpdate(tableName string, tryCount int, key string) bool {
 	result := true
 
 	stmt, err := db.Prepare("UPDATE " + tableName + " SET serial_activated=?, serial_activated_time=? WHERE serial_key=?")
+	defer stmt.Close()
 
 	if err != nil {
 		result = false
 		utils.PrintOutput(err.Error())
 	}
 
-	defer stmt.Close()
-
 	activatedTime := time.Now().Format(time.RFC3339)
-	mHash = sha1.New()
-	mHash.Write([]byte(key))
-	serialHash := fmt.Sprintf("%x", mHash.Sum(nil))
-
-	_, err = stmt.Exec(tryCount, activatedTime, serialHash)
+	_, err = stmt.Exec(tryCount, activatedTime, key)
 	if err != nil {
 		result = false
 		utils.PrintOutput(err.Error())
@@ -165,19 +172,14 @@ func ResetSerial(tableName string, key string) (bool, int64) {
 	result := true
 
 	stmt, err := db.Prepare("UPDATE " + tableName + " SET serial_activated=0, serial_activated_time=NULL WHERE serial_key=?")
+	defer stmt.Close()
 
 	if err != nil {
 		result = false
 		utils.PrintOutput(err.Error())
 	}
 
-	defer stmt.Close()
-
-	mHash = sha1.New()
-	mHash.Write([]byte(key))
-	serialHash := fmt.Sprintf("%x", mHash.Sum(nil))
-
-	out, err := stmt.Exec(serialHash)
+	out, err := stmt.Exec(key)
 	if err != nil {
 		result = false
 		utils.PrintOutput(err.Error())
@@ -197,17 +199,13 @@ func AboutSerial(tableName string, key string) (bool, int, int, string) {
 		serialActivatedTime string
 	)
 
-	mHash = sha1.New()
-	mHash.Write([]byte(key))
-	serialHash := fmt.Sprintf("%x", mHash.Sum(nil))
+	rows, err := db.Query("SELECT serial_activated, max_activations, COALESCE(serial_activated_time, '') as serial_activated_time FROM "+tableName+" WHERE serial_key=?", key)
+	defer rows.Close()
 
-	rows, err := db.Query("SELECT serial_activated, max_activations, COALESCE(serial_activated_time, '') as serial_activated_time FROM "+tableName+" WHERE serial_key=?", serialHash)
 	if err != nil {
 		result = false
 		utils.PrintOutput(err.Error())
 	}
-
-	defer rows.Close()
 
 	if rows.Next() == true {
 		result = true

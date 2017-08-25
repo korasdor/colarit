@@ -7,6 +7,8 @@ import (
 	"io/ioutil"
 	"encoding/json"
 	"net/http"
+	"bytes"
+	"errors"
 )
 
 var (
@@ -16,6 +18,29 @@ var (
 	TEMPLATE_REMOTE_URL string = "http://colarit.com/colar/templates/books.json"
 )
 
+func FormatSerials(serials []string, serialFormat string) (string, error) {
+	var resultString string
+	var err error
+
+	if serialFormat == "csv" {
+		var buffer bytes.Buffer
+		for i := 0; i < len(serials); i++ {
+			buffer.WriteString(serials[i] + "\n")
+		}
+
+		resultString = buffer.String()
+	} else {
+		err = errors.New("Unsupported format")
+	}
+
+	return resultString, err
+}
+
+func GetDealerName(dealerId int) string {
+	dealerNamesMap := map[int]string{1: "uz", 2: "tj", 3: "ru"}
+
+	return dealerNamesMap[dealerId]
+}
 
 func GetCountry(clientIp string) string {
 	country := "Us"
