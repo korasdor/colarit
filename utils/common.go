@@ -12,9 +12,8 @@ import (
 )
 
 var (
-	ROOT_PATH           string = ""
-	GEO_LITE_FILE_PATH  string = ROOT_PATH + "static/data/GeoLite2-Country.mmdb"
-	TEMPLATE_LOCAL_PATH string = ROOT_PATH + "templates/books.json"
+	GEO_LITE_FILE_PATH  string = "static/data/GeoLite2-Country.mmdb"
+	TEMPLATE_LOCAL_PATH string = "templates/books.json"
 	TEMPLATE_REMOTE_URL string = "http://colarit.com/colar/templates/books.json"
 )
 
@@ -37,15 +36,13 @@ func FormatSerials(serials []string, serialFormat string) (string, error) {
 }
 
 func GetDealerName(dealerId int) string {
-	dealerNamesMap := map[int]string{1: "uz", 2: "tj", 3: "ru"}
+	dealerNamesMap := map[int]string{0: "test", 1: "uz", 2: "tj", 3: "ru"}
 
 	return dealerNamesMap[dealerId]
 }
 
 func GetCountry(clientIp string) string {
 	country := "Us"
-
-	fmt.Println(GEO_LITE_FILE_PATH)
 
 	db, err := geoip2.Open(GEO_LITE_FILE_PATH)
 	if err != nil {
@@ -73,19 +70,19 @@ func UpdateBooksTemplate() bool {
 	response, err := http.Get(TEMPLATE_REMOTE_URL)
 	if err != nil {
 		result = false
-		fmt.Println(err)
+		PrintOutput(err.Error())
 	} else {
 		defer response.Body.Close()
 		contents, err := ioutil.ReadAll(response.Body)
 		if err != nil {
 			result = false
-			fmt.Println(err)
+			PrintOutput(err.Error())
 		}
 
 		err = ioutil.WriteFile(TEMPLATE_LOCAL_PATH, contents, 0644)
 		if err != nil {
 			result = false
-			fmt.Println(err)
+			PrintOutput(err.Error())
 		}
 	}
 
@@ -121,7 +118,6 @@ func GetBooksJson(country string) []byte {
 	}
 
 	return bookJsonStr
-
 }
 
 func PrintOutput(str string) {

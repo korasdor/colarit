@@ -31,6 +31,8 @@ func main() {
 	r.HandleFunc("/create_table/{table_name}/{access_token}", handler.CreateTableHandler)
 	r.HandleFunc("/fill_table/{table_name}/{serials_count}/{range_id}/{dealer_id}/{access_token}", handler.FillTableHandler)
 
+	r.HandleFunc("/fill_table_with_file/{table_name}/{file_name}/{range_id}/{dealer_id}/{access_token}", handler.FillTableWithFileHandler)
+
 	r.HandleFunc("/get_serial/{table_name}/{range_id}/{dealer_id}/{serials_format}/{access_token}", handler.GetSerialsHandler)
 
 	r.HandleFunc("/activate_serial/{table_name}/{serial_key}", handler.ActivateSerialsHandler)

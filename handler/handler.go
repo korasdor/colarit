@@ -112,6 +112,35 @@ func FillTableHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprint(w, output)
 }
 
+func FillTableWithFileHandler(w http.ResponseWriter, r *http.Request) {
+	var output string
+
+	vars := mux.Vars(r)
+	accessToken := vars["access_token"]
+
+	if accessToken == model.ACCESS_TOKEN {
+		fileName := vars["file_name"]
+		rangeId := vars["range_id"]
+		tableName := vars["table_name"]
+		dealerId := vars["dealer_id"]
+
+		serials, err := services.GetSerialFromFile(fileName)
+		if err != nil {
+			output = fmt.Sprintf("{ \"error\": \"1\", \"message\":\"Error reading the file %s\"}", fileName)
+		} else {
+			if services.FillSerialsTable(tableName, serials, dealerId, rangeId) {
+				output = fmt.Sprintf("{ \"message\":\"Table %s is filled successfully\"}", tableName)
+			} else {
+				output = fmt.Sprintf("{ \"error\": \"2\", \"message\":\"Table %s filling error\"}", tableName)
+			}
+		}
+	} else {
+		output = fmt.Sprintf("{ \"error\": \"1\", \"message\":\"Incorrect access token. Token %s incorrect\"}", accessToken)
+	}
+
+	fmt.Fprint(w, output)
+}
+
 /**
  * получить файл с серийниками
  */

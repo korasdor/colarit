@@ -4,6 +4,9 @@ import (
 	"time"
 	"math/rand"
 	"github.com/korasdor/colarit/model"
+	"os"
+	"bufio"
+	"github.com/korasdor/colarit/utils"
 )
 
 var (
@@ -34,4 +37,22 @@ func GenerateSerial(size int) string {
 	}
 
 	return result
+}
+
+func GetSerialFromFile(fileName string, ) ([]string, error) {
+	var serials []string
+
+	file, err := os.Open("serials/" + fileName)
+	defer file.Close()
+
+	if err != nil {
+		utils.PrintOutput(err.Error())
+	} else {
+		scanner := bufio.NewScanner(file)
+		for scanner.Scan() {
+			serials = append(serials, scanner.Text())
+		}
+	}
+
+	return serials, err
 }
