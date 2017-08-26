@@ -87,10 +87,11 @@ func FillSerialsTable(tableName string, serials []string, dealerId string, range
 	return true
 }
 
-func GetSerialsRange(tableName string, rangeId string) ([]string, error) {
+func GetSerialsRange(tableName string, rangeId string, dealerId string) ([]string, error) {
 	var serials []string
 
-	rows, err := db.Query("SELECT serial_key FROM "+tableName+" WHERE range_id=?", rangeId)
+	query := fmt.Sprintf("SELECT serial_key FROM %s WHERE range_id=%s AND dealer_id=%s", tableName, rangeId, dealerId)
+	rows, err := db.Query(query)
 	defer rows.Close()
 
 	if err != nil {

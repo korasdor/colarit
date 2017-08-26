@@ -150,19 +150,19 @@ func GetSerialsHandler(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	accessToken := vars["access_token"]
 	rangeId := vars["range_id"]
-
+	dealerId := vars["dealer_id"]
 	tableName := vars["table_name"]
 	serialFormat := vars["serials_format"]
 
 	if accessToken == model.ACCESS_TOKEN {
-		serials, err := services.GetSerialsRange(tableName, rangeId)
+		serials, err := services.GetSerialsRange(tableName, rangeId, dealerId)
 
 		if err != nil {
 			output = fmt.Sprintf("{ \"error\": \"2\", \"message\":\"An error occurred when obtaining the serial numbers in the table %s and rage %s\"}", tableName, rangeId)
 		} else {
-			dealerId, err := strconv.Atoi(vars["dealer_id"])
+			dealerIdInt, err := strconv.Atoi(dealerId)
 			if err != nil {
-				output = fmt.Sprintf("{ \"error\": \"1\", \"message\":\"Incorrect dealer id. Dealer id %s incorrect\"}", vars["dealer_id"])
+				output = fmt.Sprintf("{ \"error\": \"1\", \"message\":\"Incorrect dealer id. Dealer id %s incorrect\"}", dealerId)
 			} else {
 				resultString, err := utils.FormatSerials(serials, serialFormat)
 				if err != nil {
@@ -172,7 +172,7 @@ func GetSerialsHandler(w http.ResponseWriter, r *http.Request) {
 						resultString = resultString[:last]
 					}
 
-					downloadFileName := tableName + "_" + utils.GetDealerName(dealerId) + "_" + rangeId + ".csv"
+					downloadFileName := tableName + "_" + utils.GetDealerName(dealerIdInt) + "_" + rangeId + ".csv"
 
 					w.Header().Set("Content-Type", "text/csv")
 					w.Header().Set("Content-Disposition", "attachment; filename="+downloadFileName)

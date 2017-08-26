@@ -1,24 +1,24 @@
 {
-  "last_app_verson":1,
+  "last_app_verson":6,
   "assets_server":"http://colarit.com/colar",
   "langs_path":"http://colarit.com/colar/langs/langs_data.json",
   "supported_langs":[],
   "books": [
 
     {
-      "book_id": "0",
+      "book_id":0,
       "book_is_published":true,
-      "app_support_version": "2",
+      "app_support_version":2,
       "book_title": {"ru":"Демо", "uz":"Demo", "en":"Demo"},
       "book_name": "demos_book",      
       "db_name": "demos_book",
-      "book_type_id":"1",
+      "book_type_id":1,
       "book_type_name":{"ru":"промо","en":"promo","uz":"promo"},
       "assets_need_update":false,
-      "asset_bundle_version":"6",
+      "asset_bundle_version":7,
       "asset_bundle_name":"demos_book_bundle",
       "book_cover_path":"demos_book_cover.jpg",
-      "book_cover_big_path":"demos_book_cover_big.png",
+      "book_in_app_purchase_id":"empty",
       "book_paid_type":1,
       "book_description":{
         "ru":"Скачайте бесплатно демо-версию приложения COLAR и распечатайте раскраску с его изображением. В результате у вас появится новый, самый верный дружок.", 
@@ -32,19 +32,19 @@
     },
 
     {
-      "book_id": "1",
+      "book_id":1,
       "book_is_published":true,
-      "app_support_version": "1",
+      "app_support_version":1,
       "book_title": {"ru":"Любимые герои", "uz":"Sevimli qahramonlar", "en":"Favorite characters"},
       "book_name": "favorite_heroes_book",      
       "db_name": "favorite_heroes_book",
-      "book_type_id":"2",
+      "book_type_id":2,
       "book_type_name":{"ru":"живые раскраски","en":"live coloring","uz":"jonli bo’yoq"},
       "assets_need_update":false,
-      "asset_bundle_version":"1",
+      "asset_bundle_version":1,
       "asset_bundle_name":"favorite_heroes_book_bundle",
       "book_cover_path":"favorite_heroes_book_cover.jpg",
-      "book_cover_big_path":"favorite_heroes_book_cover_big.png",
+      "book_in_app_purchase_id":"empty",
       "book_paid_type":2,
       "book_description":{
         "ru":"В живых раскрасках “Любимые герои” мы собрали не большое количество веселых персонажей, которые смогут доставить огромное удовольствие от всего процесса Вам и вашему чаду.", 
@@ -93,19 +93,19 @@
         ]
     },
     {
-      "book_id": "2",
+      "book_id":2,
       "book_is_published":true,
-      "app_support_version": "1",
+      "app_support_version":1,
       "book_title": {"ru":"В мире животных", "uz":"Hayvonot olamida", "en":"In world of animals"},
       "book_name": "animals_book",
       "db_name": "animals_book",
-      "book_type_id":"2",
+      "book_type_id":2,
       "book_type_name":{"ru":"живые раскраски","en":"live coloring","uz":"jonli bo’yoq"},
       "assets_need_update":false,
-      "asset_bundle_version":"1",
+      "asset_bundle_version":1,
       "asset_bundle_name":"animals_book_bundle",
       "book_cover_path":"animals_book_cover.jpg",
-      "book_cover_big_path":"animals_book_cover_big.png",
+      "book_in_app_purchase_id":"empty",
       "book_paid_type":2,
       "book_description":{
         "ru":"В 3D раскрасках  «В мире животных» собраны одни из самых ярких представителей фауны нашей планеты. Это детская энциклопедия и раскраска в одном издании.", 
@@ -215,19 +215,19 @@
     },
 
     {
-      "book_id": "3",
+      "book_id":3,
       "book_is_published":true,
-      "app_support_version": "1",
+      "app_support_version":1,
       "book_title": {"ru":"Наши профессии", "uz":"Bizning kasblar", "en":"Our profession"},
       "book_name": "professions_book",
       "db_name": "professions_book",
-      "book_type_id":"2",
+      "book_type_id":2,
       "book_type_name":{"ru":"живые раскраски","en":"live coloring","uz":"jonli bo’yoq"},
       "assets_need_update":false,
-      "asset_bundle_version":"1",
+      "asset_bundle_version":1,
       "asset_bundle_name":"professions_book_bundle",
       "book_cover_path":"professions_book_cover.jpg",
-      "book_cover_big_path":"professions_book_cover_big.png",
+      "book_in_app_purchase_id":"empty",
       "book_paid_type":2,
       "book_description":{
         "ru":"В 3D раскрасках “Наши профессии” собраны одни из самых интереснейших профессий нашей планеты.", 
@@ -310,210 +310,75 @@
         ]
     },
     {
-      "book_id": "4",
+      "book_id": 4,
       "book_is_published":true,
-      "app_support_version": "1",
+      "app_support_version": 1,
       "book_title": {"ru":"Плюшевые мишки", "uz":"Ayiqchalar", "en":"Teddy bears"},
       "book_name": "teddy_bears_book",
       "db_name": "teddy_bears_book",
-      "book_type_id":"2",
+      "book_type_id":2,
       "book_type_name":{"ru":"живые раскраски","en":"live coloring","uz":"jonli bo’yoq"},
       "assets_need_update":false,
-      "asset_bundle_version":"3",
+      "asset_bundle_version":4,
       "asset_bundle_name":"teddy_bears_book_bundle",
       "book_cover_path":"teddy_bears_book_cover.jpg",
-      "book_cover_big_path":"teddy_bears_book_cover_big.png",
+      "book_in_app_purchase_id":"com.colarit.books.teddy_bears_book",
       "book_paid_type":2,
       "book_description":{
         "ru":"Мишек Тедди любит весь мир – это символ любви, нежности и доброты, и конечно, самый лучший подарок на любой праздник.  Мишки Тедди - настоящие друзья, с которыми не захочется расставаться",
-        "en":"Teddy bears like the whole world - is a symbol of love, affection and romance and of course the best gift for any occasion. Teddy bears - real friends will not want a leave.",
+        "en":"Teddy bears are the world favorites – they symbolize love, tenderness and kindness. They are hands down the best presents for any special occasion. Teddy bears – are true friends, you would never want to part with.",
         "uz":"Teddy ayiqchalarini butun dunyo sevadi - u sevgi muhabbat va romantika ramzi hisoblanadi, va albatta har qanday bayram uchun eng yahshi sovg'a bo'la oladi. Teddy ayiqchalari siz tark etishni istamaydigan haqiqiy do'stingizdir."
       },
-      "objects_has_declaration":false,
+      "objects_has_declaration":true,
       "has_in_app_purchase":false,
       "objects":[
-        {"marker_name":"ariya_marker", "obj_name":"ariya_no_color", "opject_type":"coloring", "obj_pos":[0.0,0.0,0.0], "obj_scale":[1.0,1.0,1.0], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"ariya_story_sound", "back_sound":"empty", "action_sound":"ariya_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[-90,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":395, "idle":[0,150],"idle2":[0,0],"action1":[155,395],"action2":[155,395],"action3":[155,395]}},
-
-        {"marker_name":"cloudy_marker", "obj_name":"cloudy_no_color", "opject_type":"coloring", "obj_pos":[0.0,0.0,0.0], "obj_scale":[1.0,1.0,1.0], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"cloudy_story_sound", "back_sound":"empty", "action_sound":"cloudy_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[-90,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":300, "idle":[0,38],"idle2":[0,0],"action1":[50,300],"action2":[50,300],"action3":[50,300]}},
-
-        {"marker_name":"flafi_marker", "obj_name":"flafi_no_color", "opject_type":"coloring", "obj_pos":[0.0,0.0,0.0], "obj_scale":[1.0,1.0,1.0], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"flafi_story_sound", "back_sound":"empty", "action_sound":"flafi_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[-90,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":450, "idle":[0,60],"idle2":[0,0],"action1":[60,450],"action2":[60,450],"action3":[60,450]}},
-
-        {"marker_name":"flora_marker", "obj_name":"flora_no_color", "opject_type":"coloring", "obj_pos":[0.0,0.0,0.0], "obj_scale":[1.0,1.0,1.0], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"flora_story_sound", "back_sound":"empty", "action_sound":"flora_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[-90,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":246, "idle":[0,12],"idle2":[0,0],"action1":[15,246],"action2":[15,246],"action3":[15,246]}},
-
-        {"marker_name":"pluni_marker", "obj_name":"pluni_no_color", "opject_type":"coloring", "obj_pos":[0.0,0.0,0.0], "obj_scale":[1.0,1.0,1.0], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"pluni_story_sound", "back_sound":"empty", "action_sound":"pluni_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[-90,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":224, "idle":[0,80],"idle2":[0,0],"action1":[80,224],"action2":[80,224],"action3":[80,224]}},
-
-        {"marker_name":"selena_marker", "obj_name":"selena_no_color", "opject_type":"coloring", "obj_pos":[0.0,0.0,0.0], "obj_scale":[1.0,1.0,1.0], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"selena_story_sound", "back_sound":"empty", "action_sound":"selena_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[-90,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":350, "idle":[0,100],"idle2":[0,0],"action1":[100,350],"action2":[100,350],"action3":[100,350]}},
-
-        {"marker_name":"sunny_marker", "obj_name":"sunny_no_color", "opject_type":"coloring", "obj_pos":[0.0,0.0,0.0], "obj_scale":[1.0,1.0,1.0], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"sunny_story_sound", "back_sound":"empty", "action_sound":"sunny_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[-90,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":200, "idle":[0,19],"idle2":[0,0],"action1":[29,200],"action2":[29,200],"action3":[29,200]}},
-
-
-
-        {"marker_name":"ariya_marker_color", "obj_name":"ariya_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.8,0.8,0.8], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"ariya_story_sound", "back_sound":"empty", "action_sound":"ariya_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[-90,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":395, "idle":[0,150],"idle2":[0,0],"action1":[155,395],"action2":[155,395],"action3":[155,395]}},
-
-        {"marker_name":"cloudy_marker_color", "obj_name":"cloudy_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.8,0.8,0.8], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"cloudy_story_sound", "back_sound":"empty", "action_sound":"cloudy_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[-90,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":300, "idle":[0,38],"idle2":[0,0],"action1":[50,300],"action2":[50,300],"action3":[50,300]}},
-
-        {"marker_name":"flafi_marker_color", "obj_name":"flafi_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.8,0.8,0.8], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"flafi_story_sound", "back_sound":"empty", "action_sound":"flafi_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[-90,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":450, "idle":[0,60],"idle2":[0,0],"action1":[60,450],"action2":[60,450],"action3":[60,450]}},
-
-        {"marker_name":"flora_marker_color", "obj_name":"flora_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.8,0.8,0.8], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"flora_story_sound", "back_sound":"empty", "action_sound":"flora_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[-90,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":246, "idle":[0,12],"idle2":[0,0],"action1":[15,246],"action2":[15,246],"action3":[15,246]}},
-
-        {"marker_name":"pluni_marker_color", "obj_name":"pluni_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.8,0.8,0.8], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"pluni_story_sound", "back_sound":"empty", "action_sound":"pluni_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[-90,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":224, "idle":[0,80],"idle2":[0,0],"action1":[80,224],"action2":[80,224],"action3":[80,224]}},
-
-        {"marker_name":"selena_marker_color", "obj_name":"selena_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.8,0.8,0.8], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"selena_story_sound", "back_sound":"empty", "action_sound":"selena_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[-90,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":350, "idle":[0,100],"idle2":[0,0],"action1":[100,350],"action2":[100,350],"action3":[100,350]}},
-
-        {"marker_name":"sunny_marker_color", "obj_name":"sunny_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.8,0.8,0.8], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"sunny_story_sound", "back_sound":"empty", "action_sound":"sunny_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[-90,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":200, "idle":[0,19],"idle2":[0,0],"action1":[29,200],"action2":[29,200],"action3":[29,200]}}
-        ]
-    },
-
-    {
-      "book_id": "5",
-      "book_is_published":true,
-      "app_support_version": "1",
-      "book_title": {"ru":"Мир динозавров", "uz":"Dinozavrlar dunyosi", "en":"Dinosaurs world"},
-      "book_name": "dino_world_book",
-      "db_name": "dino_world_book",
-      "book_type_id":"3",
-      "book_type_name":{"ru":"энциклопедия","en":"encyclopedia","uz":"entsiklopediya"},
-      "assets_need_update":false,
-      "asset_bundle_version":"3",
-      "asset_bundle_name":"dino_world_book_bundle",
-      "book_cover_path":"dino_world_book_cover.jpg",
-      "book_cover_big_path":"dino_world_book_cover_big.png",
-      "book_paid_type":2,
-      "book_description":{
-        "ru":"С нашей энциклопедией вы совершите путешествие в мир ископаемых животных без всякой машины времени, получите представление о динозаврах и их классификации.",
-        "en":"Our encyclopedia will take you on a journey into the world of fossil animals without a time machine, learn about dinosaurs and their classification.",
-        "uz":"Bizning ensiklopediya orqali siz hech qanday vaqt mashinasisiz arhiologik qazib olingan hayvonlar olamiga sayohat qilasiz,dinozavrlar haqida tasavvurga ega bo'lasiz."
-      },
-      "objects_has_declaration":false,
-      "has_in_app_purchase":false,
-      "objects":[
-        {"marker_name":"ankylosaurus_marker", "obj_name":"ankylosaurus_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.03,0.03,0.03], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"ankylosaurus_story_sound", "back_sound":"empty", "action_sound":"ankylosaurus_action_sound"},
-          "object_rotation":[0,270,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":1550, "idle":[1450,1550],"idle2":[0,0],"action1":[0,1440],"action2":[0,1440],"action3":[0,1440]}},
-
-        {"marker_name":"brachiosaurus_marker", "obj_name":"brachiosaurus_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.02,0.02,0.02], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"brachiosaurus_story_sound", "back_sound":"empty", "action_sound":"brachiosaurus_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":1405, "idle":[1330,1405],"idle2":[0,0],"action1":[0,1320],"action2":[0,1320],"action3":[0,1320]}},
-
-        {"marker_name":"compsognathus_marker", "obj_name":"compsognathus_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.2,0.2,0.2], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"compsognathus_story_sound", "back_sound":"empty", "action_sound":"compsognathus_action_sound"},
-          "object_rotation":[0,270,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":240, "idle":[161,240],"idle2":[0,0],"action1":[0,160],"action2":[0,160],"action3":[0,160]}},
-
-        {"marker_name":"dilophosaurus_marker", "obj_name":"dilophosaurus_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.07,0.07,0.07], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"dilophosaurus_story_sound", "back_sound":"empty", "action_sound":"dilophosaurus_action_sound"},
-          "object_rotation":[0,270,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":160, "idle":[0,40],"idle2":[0,0],"action1":[41,160],"action2":[41,160],"action3":[41,160]}},
-
-        {"marker_name":"dimetrodon_marker", "obj_name":"dimetrodon_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.03,0.03,0.03], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"dimetrodon_story_sound", "back_sound":"empty", "action_sound":"dimetrodon_action_sound"},
-          "object_rotation":[0,270,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":300, "idle":[0,100],"idle2":[0,0],"action1":[101,300],"action2":[101,300],"action3":[101,300]}},
-
-        {"marker_name":"oviraptor_marker", "obj_name":"oviraptor_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.07,0.07,0.07], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"oviraptor_story_sound", "back_sound":"empty", "action_sound":"oviraptor_action_sound"},
-          "object_rotation":[0,270,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":300, "idle":[0,60],"idle2":[0,0],"action1":[61,300],"action2":[61,300],"action3":[61,300]}},
-
-        {"marker_name":"parasaurolophus_marker", "obj_name":"parasaurolophus_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.03,0.03,0.03], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"parasaurolophus_story_sound", "back_sound":"empty", "action_sound":"parasaurolophus_action_sound"},
-          "object_rotation":[0,270,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":1380, "idle":[0,100],"idle2":[0,0],"action1":[120,1380],"action2":[120,1380],"action3":[120,1380]}},
-
-        {"marker_name":"pteranodon_marker", "obj_name":"pteranodon_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.03,0.03,0.03], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"pteranodon_story_sound", "back_sound":"empty", "action_sound":"pteranodon_action_sound"},
-          "object_rotation":[0,270,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":440, "idle":[0,200],"idle2":[0,0],"action1":[200,440],"action2":[200,440],"action3":[200,440]}},
-
-        {"marker_name":"spinosaurus_marker", "obj_name":"spinosaurus_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.02,0.02,0.02], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"spinosaurus_story_sound", "back_sound":"empty", "action_sound":"spinosaurus_action_sound"},
-          "object_rotation":[0,270,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":430, "idle":[0,240],"idle2":[0,0],"action1":[240,430],"action2":[240,430],"action3":[240,430]}},
-
-        {"marker_name":"stegosaurus_marker", "obj_name":"stegosaurus_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.03,0.03,0.03], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"stegosaurus_story_sound", "back_sound":"empty", "action_sound":"stegosaurus_action_sound"},
-          "object_rotation":[0,270,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":1620, "idle":[0,120],"idle2":[0,0],"action1":[121,1620],"action2":[121,1620],"action3":[121,1620]}},
-
-        {"marker_name":"triceratops_marker", "obj_name":"triceratops_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.03,0.03,0.03], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"triceratops_story_sound", "back_sound":"empty", "action_sound":"triceratops_action_sound"},
-          "object_rotation":[0,270,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":1080, "idle":[0,103],"idle2":[0,0],"action1":[120,1080],"action2":[120,1080],"action3":[120,1080]}},
-
-        {"marker_name":"tyrannosaurus_marker", "obj_name":"tyrannosaurus_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.02,0.02,0.02], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"tyrannosaurus_story_sound", "back_sound":"empty", "action_sound":"tyrannosaurus_action_sound"},
-          "object_rotation":[0,270,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":330, "idle":[0,120],"idle2":[0,0],"action1":[121,330],"action2":[121,330],"action3":[121,330]}},
-
-        {"marker_name":"velociraptor_marker", "obj_name":"velociraptor_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.07,0.07,0.07], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"velociraptor_story_sound", "back_sound":"empty", "action_sound":"velociraptor_action_sound"},
-          "object_rotation":[0,270,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":365, "idle":[0,100],"idle2":[0,0],"action1":[101,365],"action2":[101,365],"action3":[101,365]}}
       ]
     },
 
     {
-      "book_id": "6",
+      "book_id":5,
       "book_is_published":true,
-      "app_support_version": "1",
+      "app_support_version":1,
+      "book_title": {"ru":"Мир динозавров", "uz":"Dinozavrlar dunyosi", "en":"Dinosaurs world"},
+      "book_name": "dino_world_book",
+      "db_name": "dino_world_book",
+      "book_type_id":3,
+      "book_type_name":{"ru":"энциклопедия","en":"encyclopedia","uz":"entsiklopediya"},
+      "assets_need_update":false,
+      "asset_bundle_version":4,
+      "asset_bundle_name":"dino_world_book_bundle",
+      "book_cover_path":"dino_world_book_cover.jpg",
+      "book_in_app_purchase_id":"com.colarit.books.dino_world_book",
+      "book_paid_type":2,
+      "book_description":{
+        "ru":"С нашей энциклопедией вы совершите путешествие в мир ископаемых животных без всякой машины времени, получите представление о динозаврах и их классификации.",
+        "en":"Enjoy the travel into the world of fossil animals! Now there’s no need in time machine to get to know what dinosaurs were and what features they had.",
+        "uz":"Bizning ensiklopediya orqali siz hech qanday vaqt mashinasisiz arhiologik qazib olingan hayvonlar olamiga sayohat qilasiz,dinozavrlar haqida tasavvurga ega bo'lasiz."
+      },
+      "objects_has_declaration":true,
+      "has_in_app_purchase":false,
+      "objects":[
+      ]
+    },
+
+    {
+      "book_id":6,
+      "book_is_published":true,
+      "app_support_version":1,
       "book_title": {"ru":"Танцующие коровки", "uz":"Raqosa sigirchalar", "en":"Dancing cows"},
       "book_name": "musaffo_book",
       "db_name": "musaffo_book",
-      "book_type_id":"2",
+      "book_type_id":2,
       "book_type_name":{"ru":"живые раскраски","en":"live coloring","uz":"jonli bo’yoq"},
       "assets_need_update":false,
-      "asset_bundle_version":"4",
+      "asset_bundle_version":4,
       "asset_bundle_name":"musaffo_book_bundle",
       "book_cover_path":"musaffo_book_cover.jpg",
-      "book_cover_big_path":"musaffo_book_cover_big.png",
+      "book_in_app_purchase_id":"com.colarit.books.musaffo_book",
       "book_paid_type":2,
       "book_description":{
-        "ru":"Окунитесь в мир музыки и веселья вместе с очаровательными коровками «Musaffo»! Смешные «Танцующие коровки» исполнят для вас зажигательные номера, подарят атмосферу радости и хорошего настроения!",
-        "en":"",
+        "ru":"Окунитесь в мир музыки и веселья вместе с очаровательными коровками! Смешные «Танцующие коровки» исполнят для вас зажигательные номера, подарят атмосферу радости и хорошего настроения!",
+        "en":"Enjoy the world of music and fun along with charming cows. Their lively performances will create a joyful ambience for your listening and viewing pleasure!",
         "uz":"Dunyo musiqasiga nazar soling va «Musaffo»! Qiziqarli sigirchalar raqsini tamosha qilasiz.“Ushbu sigirchalar” sizga o`z raqslari bilan yaxshi kayfiyat va quvonch taqdim etadi va ommabop janrlari bilan sizni befarq qoldirmaydi."
       },
       "objects_has_declaration":false,
@@ -583,310 +448,101 @@
 
       ]
     },
-
-
     {
-      "book_id": "7",
+      "book_id":7,
       "book_is_published":true,
-      "app_support_version": "1",
+      "app_support_version":1,
       "book_title": {"ru":"Прекрасные девченки", "uz":"Chiroyli qizlar", "en":"Beautiful girls"},
       "book_name": "beautiful_girls_book",
       "db_name": "beautiful_girls_book",
-      "book_type_id":"2",
+      "book_type_id":2,
       "book_type_name":{"ru":"живые раскраски","en":"live coloring","uz":"jonli bo’yoq"},
       "assets_need_update":false,
-      "asset_bundle_version":"4",
+      "asset_bundle_version":5,
       "asset_bundle_name":"beautiful_girls_book_bundle",
       "book_cover_path":"beautiful_girls_book_cover.jpg",
-      "book_cover_big_path":"beautiful_girls_book_cover_big.png",
+      "book_in_app_purchase_id":"com.colarit.books.beautiful_girls_book",
       "book_paid_type":2,
       "book_description":{
         "ru":"На страничках этой чудесной оживающей 3D книжки-раскраски ты встретишься с удивительными красавицами и при помощи цветных карандашей и фломастеров сделаешь их мир ярким и красочным.",
-        "en":"Coming soon.",
+        "en":"Stunning beauties are awaiting you on the pages of this fabulous animated 3D coloring book! Pick and color in your own exotic girl characters making their world brighter and exciting.",
         "uz":"Bu 3D jonlanuvchi bo'yoqli kitobcha saxifalarida sen ajoyib malaklar bilan uchrashasan va ularning olamini rangli qalam va flomasterlar yordamida ranglantirasan."
       },
-      "objects_has_declaration":false,
+      "objects_has_declaration":true,
       "has_in_app_purchase":false,
       "objects":[
-        {"marker_name":"dancer_marker", "obj_name":"dancer_no_color", "opject_type":"coloring", "obj_pos":[0.0,0.0,0.0], "obj_scale":[6.0,6.0,6.0], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"dancer_story_sound", "back_sound":"empty", "action_sound":"dancer_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[-90,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":1200, "idle":[740,1200],"idle2":[0,0],"action1":[15,729],"action2":[15,729],"action3":[15,729]}},
-        
-        {"marker_name":"fitness_marker", "obj_name":"fitness_no_color", "opject_type":"coloring", "obj_pos":[0.0,0.0,0.0], "obj_scale":[6.0,6.0,6.0], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"fitness_story_sound", "back_sound":"empty", "action_sound":"fitness_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[-90,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":1520, "idle":[1221,1520],"idle2":[0,0],"action1":[15,1220],"action2":[15,1220],"action3":[15,1220]}},
-        
-        {"marker_name":"reporter_marker", "obj_name":"reporter_no_color", "opject_type":"coloring", "obj_pos":[0.0,0.0,0.0], "obj_scale":[6.0,6.0,6.0], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"reporter_story_sound", "back_sound":"empty", "action_sound":"reporter_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[-90,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":670, "idle":[10,450],"idle2":[0,0],"action1":[450,644],"action2":[450,644],"action3":[450,644]}},
-        
-        {"marker_name":"roller_marker", "obj_name":"roller_no_color", "opject_type":"coloring", "obj_pos":[0.0,0.0,0.0], "obj_scale":[6.0,6.0,6.0], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"roller_story_sound", "back_sound":"empty", "action_sound":"roller_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[-90,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":1025, "idle":[560,1025],"idle2":[0,0],"action1":[10,550],"action2":[10,550],"action3":[10,550]}},
-
-        {"marker_name":"tennis_marker", "obj_name":"tennis_no_color", "opject_type":"coloring", "obj_pos":[0.0,0.0,0.0], "obj_scale":[6.0,6.0,6.0], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"tennis_story_sound", "back_sound":"empty", "action_sound":"tennis_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[-90,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":940, "idle":[630,911],"idle2":[0,0],"action1":[0,620],"action2":[0,620],"action3":[0,620]}},
-
-        {"marker_name":"tourist_marker", "obj_name":"tourist_no_color", "opject_type":"coloring", "obj_pos":[0.0,0.0,0.0], "obj_scale":[6.0,6.0,6.0], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"tourist_story_sound", "back_sound":"empty", "action_sound":"tourist_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[-90,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":1020, "idle":[635,1020],"idle2":[0,0],"action1":[50,630],"action2":[50,630],"action3":[50,630]}},
-
-
-
-        {"marker_name":"dancer_marker_color", "obj_name":"dancer_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[6.0,6.0,6.0], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"dancer_story_sound", "back_sound":"empty", "action_sound":"dancer_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[-90,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":1200, "idle":[740,1200],"idle2":[0,0],"action1":[15,729],"action2":[15,729],"action3":[15,729]}},
-
-        {"marker_name":"fitness_marker_color", "obj_name":"fitness_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[6.0,6.0,6.0], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"fitness_story_sound", "back_sound":"empty", "action_sound":"fitness_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[-90,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":1520, "idle":[1221,1520],"idle2":[0,0],"action1":[15,1220],"action2":[15,1220],"action3":[15,1220]}},
-
-        {"marker_name":"reporter_marker_color", "obj_name":"reporter_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[6.0,6.0,6.0], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"reporter_story_sound", "back_sound":"empty", "action_sound":"reporter_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[-90,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":670, "idle":[10,450],"idle2":[0,0],"action1":[450,644],"action2":[450,644],"action3":[450,644]}},
-
-        {"marker_name":"roller_marker_color", "obj_name":"roller_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[6.0,6.0,6.0], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"roller_story_sound", "back_sound":"empty", "action_sound":"roller_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[-90,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":1025, "idle":[560,1025],"idle2":[0,0],"action1":[10,550],"action2":[10,550],"action3":[10,550]}},
-
-        {"marker_name":"tennis_marker_color", "obj_name":"tennis_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[6.0,6.0,6.0], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"tennis_story_sound", "back_sound":"empty", "action_sound":"tennis_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[-90,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":940, "idle":[630,911],"idle2":[0,0],"action1":[0,620],"action2":[0,620],"action3":[0,620]}},
-
-        {"marker_name":"tourist_marker_color", "obj_name":"tourist_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[6.0,6.0,6.0], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"tourist_story_sound", "back_sound":"empty", "action_sound":"tourist_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[-90,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":1020, "idle":[635,1020],"idle2":[0,0],"action1":[50,630],"action2":[50,630],"action3":[50,630]}}
       ]
     },
-
     {
-      "book_id": "8",
+      "book_id":8,
       "book_is_published":true,
-      "app_support_version": "4",
+      "app_support_version":4,
       "book_title": {"ru":"Трансфомеры", "uz":"Transformerlar", "en":"Transformers"},
       "book_name": "transformers_book",
       "db_name": "transformers_book",
-      "book_type_id":"2",
+      "book_type_id":2,
       "book_type_name":{"ru":"живые раскраски","en":"live coloring","uz":"jonli bo’yoq"},
       "assets_need_update":false,
-      "asset_bundle_version":"6",
+      "asset_bundle_version":7,
       "asset_bundle_name":"transformers_book_bundle",
       "book_cover_path":"transformers_book_cover.jpg",
-      "book_cover_big_path":"transformers_book_cover_big.png",
+      "book_in_app_purchase_id":"com.colarit.books.transformers_book",
       "book_paid_type":2,
       "book_description":{
-        "ru":"«Трансформеры. Спасатели против Разрушителей.» Раскраска расскажет об эпичной борьбе роботов – Спасателей, с прилетевшими из глубин космоса роботами – Разрушителями",
-        "en":"Coming soon.",
-        "uz":"“Transformerlar”  Qutqaruvchilar buzg’unchilarga qarshi. Olis kosmosdan uchib kelgan yaxshi va yomon robotlar jangi boyoq qogozda aks etilgan."
+        "ru":"Роботы. Спасатели против Разрушителей. Раскраска расскажет об эпичной борьбе роботов – Спасателей, с прилетевшими из глубин космоса роботами – Разрушителями",
+        "en":"Robots: Rescuers vs Destroyers. The coloring book will let a child be the part of epic struggle between Rescuers and Destroyers that came flying to Earth from the depths of space.",
+        "uz":"Yaqin kunlarda."
       },
-      "objects_has_declaration":false,
+      "objects_has_declaration":true,
       "has_in_app_purchase":false,
       "objects":[
-        {"marker_name":"bugi_marker", "obj_name":"bugi_no_color", "opject_type":"coloring", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.1,0.1,0.1], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"bugi_story_no_color_sound", "back_sound":"empty", "action_sound":"bugi_action_no_color_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"Type1Animation", "animation_speed":"1","total_frames":120, "idle":[0,0],"idle2":[50,120],"action1":[0,50],"action2":[0,50],"action3":[0,50]}},
-
-        {"marker_name":"dok_marker", "obj_name":"dok_no_color", "opject_type":"coloring", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.1,0.1,0.1], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"doc_story_no_color_sound", "back_sound":"empty", "action_sound":"doc_action_no_color_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"Type1Animation", "animation_speed":"1","total_frames":120, "idle":[0,0],"idle2":[70,120],"action1":[0,70],"action2":[0,70],"action3":[0,70]}},
-
-        {"marker_name":"firejet_marker", "obj_name":"firejet_no_color", "opject_type":"coloring", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.1,0.1,0.1], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"firejet_story_no_color_sound", "back_sound":"empty", "action_sound":"firejet_action_no_color_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"Type1Animation", "animation_speed":"1","total_frames":170, "idle":[0,0],"idle2":[120,170],"action1":[0,120],"action2":[0,120],"action3":[0,120]}},
-
-        {"marker_name":"flint_marker", "obj_name":"flint_no_color", "opject_type":"coloring", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.1,0.1,0.1], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"flint_story_no_color_sound", "back_sound":"empty", "action_sound":"flint_action_no_color_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"Type1Animation", "animation_speed":"1","total_frames":120, "idle":[0,0],"idle2":[50,120],"action1":[0,50],"action2":[0,50],"action3":[0,50]}},
-
-        {"marker_name":"grom_marker", "obj_name":"grom_no_color", "opject_type":"coloring", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.1,0.1,0.1], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"grom_story_no_color_sound", "back_sound":"empty", "action_sound":"grom_action_no_color_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"Type1Animation", "animation_speed":"1","total_frames":150, "idle":[1,20],"idle2":[100,150],"action1":[20,100],"action2":[20,100],"action3":[20,100]}},
-
-        {"marker_name":"molot_marker", "obj_name":"molot_no_color", "opject_type":"coloring", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.1,0.1,0.1], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"molot_story_no_color_sound", "back_sound":"empty", "action_sound":"molot_action_no_color_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"Type1Animation", "animation_speed":"1","total_frames":120, "idle":[0,0],"idle2":[50,120],"action1":[0,50],"action2":[0,50],"action3":[0,50]}},
-
-        {"marker_name":"crasher_marker", "obj_name":"crasher_no_color", "opject_type":"coloring", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.1,0.1,0.1], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"crasher_story_no_color_sound", "back_sound":"empty", "action_sound":"crasher_action_no_color_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"Type1Animation", "animation_speed":"1","total_frames":160, "idle":[0,0],"idle2":[110,160],"action1":[0,110],"action2":[0,110],"action3":[0,110]}},
-
-
-
-
-        {"marker_name":"bugi_marker_color", "obj_name":"bugi_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.02,0.02,0.02], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"empty", "back_sound":"empty", "action_sound":"bugi_action_color_sound"},
-          "object_rotation":[0,0,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":425, "idle":[0,0],"idle2":[0,0],"action1":[0,425],"action2":[0,425],"action3":[0,425]}},
-
-        {"marker_name":"crasher_marker_color", "obj_name":"crasher_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.02,0.02,0.02], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"empty", "back_sound":"empty", "action_sound":"crasher_action_color_sound"},
-          "object_rotation":[0,0,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":720, "idle":[0,0],"idle2":[0,0],"action1":[0,720],"action2":[0,720],"action3":[0,720]}},
-
-        {"marker_name":"dok_marker_color", "obj_name":"dok_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.02,0.02,0.02], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"empty", "back_sound":"empty", "action_sound":"doc_action_color_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":600, "idle":[0,0],"idle2":[0,0],"action1":[0,600],"action2":[0,600],"action3":[0,600]}},
-
-        {"marker_name":"firejet_marker_color", "obj_name":"firejet_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.02,0.02,0.02], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"empty", "back_sound":"empty", "action_sound":"firejet_action_color_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":750, "idle":[0,0],"idle2":[0,0],"action1":[0,720],"action2":[0,720],"action3":[0,720]}},
-
-        {"marker_name":"flint_marker_color", "obj_name":"flint_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.02,0.02,0.02], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"empty", "back_sound":"empty", "action_sound":"flint_action_color_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":361, "idle":[0,0],"idle2":[0,0],"action1":[0,361],"action2":[0,361],"action3":[0,361]}},
-
-        {"marker_name":"grom_marker_color", "obj_name":"grom_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.02,0.02,0.02], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"empty", "back_sound":"empty", "action_sound":"grom_action_color_sound"},
-          "object_rotation":[0,0,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":500, "idle":[0,0],"idle2":[0,0],"action1":[0,500],"action2":[0,500],"action3":[0,500]}},
-
-        {"marker_name":"molot_marker_color", "obj_name":"molot_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.02,0.02,0.02], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"empty", "back_sound":"empty", "action_sound":"molot_action_color_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":400, "idle":[0,0],"idle2":[0,0],"action1":[0,400],"action2":[0,400],"action3":[0,400]}}
       ]
     },
 
-
     {
-      "book_id": "9",
+      "book_id":9,
       "book_is_published":true,
-      "app_support_version": "3",
+      "app_support_version":3,
       "book_title": {"ru":"Лесные друзья", "uz":"Urmondagi dustlar", "en":"Three friends"},
       "book_name": "tree_friends_book",
       "db_name": "tree_friends_book",
-      "book_type_id":"2",
+      "book_type_id":2,
       "book_type_name":{"ru":"живые раскраски","en":"live coloring","uz":"jonli bo’yoq"},
       "assets_need_update":false,
-      "asset_bundle_version":"2",
+      "asset_bundle_version":3,
       "asset_bundle_name":"tree_friends_book_bundle",
       "book_cover_path":"tree_friends_book_cover.jpg",
-      "book_cover_big_path":"tree_friends_book_cover_big.png",
+      "book_in_app_purchase_id":"com.colarit.books.tree_friends_book",
       "book_paid_type":2,
       "book_description":{
         "ru":"Все дети любят животных, и эта книга - настоящий подарок для них. На страницах книги можно раскрашивать их, оживлять и играть с ними! Малыш получит огромное удовольствие!",
-        "en":"Coming soon.",
+        "en":"Children just love animals and this book is a true treasure! It enables them to unleash their inner artist, watch their artwork come to life and interact with their creations. Your kids will experience a true pleasure!",
         "uz":"Yaqin kunlarda."
       },
-      "objects_has_declaration":false,
+      "objects_has_declaration":true,
       "has_in_app_purchase":false,
       "objects":[
-
-        {"marker_name":"bim_marker", "obj_name":"bim_no_color", "opject_type":"coloring", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.3,0.3,0.3], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"bim_story_sound", "back_sound":"empty", "action_sound":"bim_action_sound"},
-          "object_rotation":[0,90,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":775, "idle":[500,775],"idle2":[0,0],"action1":[15,490],"action2":[15,490],"action3":[15,490]}},
-
-        {"marker_name":"fabiano_marker", "obj_name":"fabiano_no_color", "opject_type":"coloring", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.3,0.3,0.3], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"fabiano_story_sound", "back_sound":"empty", "action_sound":"fabiano_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":950, "idle":[600,950],"idle2":[0,0],"action1":[40,599],"action2":[40,599],"action3":[40,599]}},
-
-        {"marker_name":"lilly_marker", "obj_name":"lilly_no_color", "opject_type":"coloring", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.3,0.3,0.3], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"lilly_story_sound", "back_sound":"empty", "action_sound":"lilly_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":845, "idle":[480,845],"idle2":[0,0],"action1":[18,480],"action2":[18,480],"action3":[18,480]}},
-
-        {"marker_name":"mevis_marker", "obj_name":"mevis_no_color", "opject_type":"coloring", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.3,0.3,0.3], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"mevis_story_sound", "back_sound":"empty", "action_sound":"mevis_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":770, "idle":[420,770],"idle2":[0,0],"action1":[15,415],"action2":[15,415],"action3":[15,415]}},
-
-        {"marker_name":"tosha_marker", "obj_name":"tosha_no_color", "opject_type":"coloring", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.3,0.3,0.3], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"tosha_story_sound", "back_sound":"empty", "action_sound":"tosha_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":1060, "idle":[12,421],"idle2":[0,0],"action1":[421,1060],"action2":[421,1060],"action3":[421,1060]}},
-
-        {"marker_name":"uno_marker", "obj_name":"uno_no_color", "opject_type":"coloring", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.3,0.3,0.3], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"uno_story_sound", "back_sound":"empty", "action_sound":"uno_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":800, "idle":[400,800],"idle2":[0,0],"action1":[15,390],"action2":[15,390],"action3":[15,390]}},
-
-        {"marker_name":"willy_marker", "obj_name":"willy_no_color", "opject_type":"coloring", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.3,0.3,0.3], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"willy_sory_sound", "back_sound":"empty", "action_sound":"willy_action_sound"},
-          "object_rotation":[0,90,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":945, "idle":[560,945],"idle2":[0,0],"action1":[15,550],"action2":[15,550],"action3":[15,550]}},
-
-
-
-        {"marker_name":"bim_marker_color", "obj_name":"bim_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.2,0.2,0.2], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"bim_story_sound", "back_sound":"empty", "action_sound":"bim_action_sound"},
-          "object_rotation":[0,90,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":775, "idle":[500,775],"idle2":[0,0],"action1":[15,490],"action2":[15,490],"action3":[15,490]}},
-
-        {"marker_name":"fabiano_marker_color", "obj_name":"fabiano_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.2,0.2,0.2], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"fabiano_story_sound", "back_sound":"empty", "action_sound":"fabiano_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":950, "idle":[600,950],"idle2":[0,0],"action1":[40,599],"action2":[40,599],"action3":[40,599]}},
-
-        {"marker_name":"lilly_marker_color", "obj_name":"lilly_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.2,0.2,0.2], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"lilly_story_sound", "back_sound":"empty", "action_sound":"lilly_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":845, "idle":[480,845],"idle2":[0,0],"action1":[18,480],"action2":[18,480],"action3":[18,480]}},
-
-        {"marker_name":"mevis_marker_color", "obj_name":"mevis_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.2,0.2,0.2], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"mevis_story_sound", "back_sound":"empty", "action_sound":"mevis_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":770, "idle":[420,770],"idle2":[0,0],"action1":[15,415],"action2":[15,415],"action3":[15,415]}},
-
-        {"marker_name":"tosha_marker_color", "obj_name":"tosha_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.2,0.2,0.2], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"tosha_story_sound", "back_sound":"empty", "action_sound":"tosha_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":1060, "idle":[12,421],"idle2":[0,0],"action1":[421,1060],"action2":[421,1060],"action3":[421,1060]}},
-
-        {"marker_name":"uno_marker_color", "obj_name":"uno_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.2,0.2,0.2], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"uno_story_sound", "back_sound":"empty", "action_sound":"uno_action_sound"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":800, "idle":[400,800],"idle2":[0,0],"action1":[15,390],"action2":[15,390],"action3":[15,390]}},
-
-        {"marker_name":"willy_marker_color", "obj_name":"willy_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.2,0.2,0.2], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"willy_sory_sound", "back_sound":"empty", "action_sound":"willy_action_sound"},
-          "object_rotation":[0,90,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":945, "idle":[560,945],"idle2":[0,0],"action1":[15,550],"action2":[15,550],"action3":[15,550]}}
       ]
     },
 
     {
-      "book_id": "10",
+      "book_id":10,
       "book_is_published":true,
-      "app_support_version": "4",
+      "app_support_version":4,
       "book_title": {"ru":"Геометрические фигуры", "uz":"Geometrik shakllar", "en":"Geometric figures"},
       "book_name": "geom2d_book",
       "db_name": "geom2d_book",
-      "book_type_id":"3",
+      "book_type_id":3,
       "book_type_name":{"ru":"энциклопедия","en":"encyclopedia","uz":"entsiklopediya"},
       "assets_need_update":false,
-      "asset_bundle_version":"1",
+      "asset_bundle_version":1,
       "asset_bundle_name":"geom2d_book_bundle",
       "book_cover_path":"geom2d_book_cover.jpg",
-      "book_cover_big_path":"geom2d_book_cover_big.png",
+      "book_in_app_purchase_id":"com.colarit.books.geom2d_book",
       "book_paid_type":2,
       "book_description":{
         "ru":"Познавательное издание откроет ребенку загадочный мир фигур. Он не только узнает, как выглядит круг, овал, треугольник, трапеция, звезда, но и сможет найти их в окружающей обстановке.",
-        "en":"Coming soon.",
+        "en":"<size=26>A child will be impressed with the mystery world of figures this book has to offer. The app helps a child to distinguish between a circle, an oval, a triangle, a trapezoid or a star and discover them in the surrounding environment. Mesmerized by vivid colors your fireball will concentrate on the essentials. AR technology helps turning flat shapes into a realistic three dimensional appearances. The animation can be viewed from any angle and the variety of audio features enhances memory effect.</size>",
         "uz":"Tez kunda."
       },
       "objects_has_declaration":true,
@@ -896,53 +552,49 @@
     },
 
     {
-      "book_id": "11",
+      "book_id":11,
       "book_is_published":true,
-      "app_support_version": "4",
+      "app_support_version":4,
       "book_title": {"ru":"Олимпийские игры", "uz":"Olimpiya o'yinlari", "en":"Olympic Games"},
       "book_name": "olympic_puzzle",
       "db_name": "olympic_puzzle",
-      "book_type_id":"4",
+      "book_type_id":4,
       "book_type_name":{"ru":"пазлы","en":"puzzle","uz":"pazllar"},
       "assets_need_update":false,
-      "asset_bundle_version":"1",
+      "asset_bundle_version":1,
       "asset_bundle_name":"olympic_puzzle_bundle",
       "book_cover_path":"olympic_puzzle_cover.jpg",
-      "book_cover_big_path":"olympic_puzzle_cover_big.png",
+      "book_in_app_purchase_id":"empty",
       "book_paid_type":2,
       "book_description":{
         "ru":"Ваш ребенок интересуется спортом и всем, что с ним связано?  Подарите ему этот пазл и, возможно, в будущем он станет участником Олимпийских игр. Малыш узнает, где зародилась традиция соревноваться в разных видах спорта.",
         "en":"Coming soon.",
         "uz":"Tez kunda."
       },
-      "objects_has_declaration":false,
+      "objects_has_declaration":true,
       "has_in_app_purchase":false,
       "objects":[
-        {"marker_name":"puppy_marker", "obj_name":"puppy_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.4,0.4,0.4], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"puppy_story_sound", "back_sound":"empty", "action_sound":"empty"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":345, "idle":[0,345],"idle2":[0,0],"action1":[0,0],"action2":[0,0],"action3":[0,0]}}
       ]
     },
 
     {
-      "book_id": "12",
+      "book_id":12,
       "book_is_published":true,
-      "app_support_version": "4",
+      "app_support_version":4,
       "book_title": {"ru":"Объемные фигуры", "uz":"3D shakllar", "en":"3D shapes"},
       "book_name": "geom3d_book",
       "db_name": "geom3d_book",
-      "book_type_id":"3",
+      "book_type_id":3,
       "book_type_name":{"ru":"энциклопедия","en":"encyclopedia","uz":"entsiklopediya"},
       "assets_need_update":false,
-      "asset_bundle_version":"1",
+      "asset_bundle_version":1,
       "asset_bundle_name":"geom3d_book_bundle",
       "book_cover_path":"geom3d_book_cover.jpg",
-      "book_cover_big_path":"geom3d_book_cover_big.png",
+      "book_in_app_purchase_id":"com.colarit.books.geom3d_book",
       "book_paid_type":2,
       "book_description":{
         "ru":"Эта занимательная книга из серии «Учись с дополненной реальностью» познакомит ребенка с объемными телами. Он узнает, что такое конус, цилиндр, куб, прямоугольный параллелепипед, пирамида, шар и тор.",
-        "en":"Coming soon.",
+        "en":"<size=29>Augmented Reality is the whole new word in education. This book’s effective presentations of geometric figures, like: cone, cube, cylinder, rectangular parallelepiped, pyramid, ball and torus aimed at helping a child develop a feel for the form and volume of figures he sees and understand the difference between “the flat” and “the voluminous”. A child can examine figures from any angle and discover them in the surrounding environment.</size>",
         "uz":"Tez kunda."
       },
       "objects_has_declaration":true,
@@ -952,23 +604,23 @@
     },
 
     {
-      "book_id": "13",
+      "book_id":13,
       "book_is_published":true,
-      "app_support_version": "4",
+      "app_support_version":4,
       "book_title": {"ru":"Космос", "uz":"Koinot", "en":"Cosmos"},
       "book_name": "cosmos_book",
       "db_name": "cosmos_book",
-      "book_type_id":"3",
+      "book_type_id":3,
       "book_type_name":{"ru":"энциклопедия","en":"encyclopedia","uz":"entsiklopediya"},
       "assets_need_update":false,
-      "asset_bundle_version":"3",
+      "asset_bundle_version":3,
       "asset_bundle_name":"cosmos_book_bundle",
       "book_cover_path":"cosmos_book_cover.jpg",
-      "book_cover_big_path":"cosmos_book_cover_big.png",
+      "book_in_app_purchase_id":"com.colarit.books.cosmos_book",
       "book_paid_type":2,
       "book_description":{
         "ru":"Эта энциклопедия из серии «Учись с дополненной реальностью» обязательно понравится будущим исследователям космоса. Они отправятся в увлекательное путешествие в неизведанный мир и узнают, как устроена вселенная.",
-        "en":"Coming soon.",
+        "en":"<size=29>This is a great introduction to space for a young kid and it will surely be enjoyed by a future space explorer. A child will take an exciting trip into the unknown world and learn how the solar system works. He will love learning what stars, planets and satellites are. The book’s gorgeous illustrations and panoramas will certainly get your nosey parker interested, so he’ll be thrilled to read it over and over.</size>",
         "uz":"Tez kunda."
       },
       "objects_has_declaration":true,
@@ -978,49 +630,49 @@
     },
 
     {
-      "book_id": "14",
+      "book_id":14,
       "book_is_published":true,
-      "app_support_version": "6",
+      "app_support_version":6,
       "book_title": {"ru":"Веселые цифры", "uz":"Quvnoq raqamlar", "en":"Funny digits"},
       "book_name": "digits_book",
       "db_name": "digits_book",
-      "book_type_id":"3",
+      "book_type_id":3,
       "book_type_name":{"ru":"энциклопедия","en":"encyclopedia","uz":"entsiklopediya"},
       "assets_need_update":false,
-      "asset_bundle_version":"1",
+      "asset_bundle_version":1,
       "asset_bundle_name":"digits_book_bundle",
       "book_cover_path":"digits_book_cover.jpg",
-      "book_cover_big_path":"digits_book_cover_big.png",
+      "book_in_app_purchase_id":"com.colarit.books.digits_book",
       "book_paid_type":2,
       "book_description":{
         "ru":"Умение считать — ценный навык, освоить который поможет энциклопедия «Веселые цифры». Забавные персонажи этой книги из серии «Учись с дополненной реальностью» познакомят ребенка с числами от 1 до 10.",
-        "en":"Coming soon.",
+        "en":"Counting skill is a valuable asset to possess. With our coloring book and funny characters kids can learn digits 0-10. The app gives children the ability to bring the characters to life and count them without assistance. Trilingual audio support affords children freedom to remember the numbers consequence in Russian, Uzbek and English.  ",
         "uz":"Tez kunda."
       },
       "objects_has_declaration":true,
-      "has_in_app_purchase":false,
+      "has_in_app_purchase":true,
       "objects":[
       ]
     },
 
     {
-      "book_id": "15",
+      "book_id":15,
       "book_is_published":true,
-      "app_support_version": "4",
+      "app_support_version":4,
       "book_title": {"ru":"Времена года", "uz":"Yil fasllari", "en":"Seasons"},
       "book_name": "seasons_book",
       "db_name": "seasons_book",
-      "book_type_id":"3",
+      "book_type_id":3,
       "book_type_name":{"ru":"энциклопедия","en":"encyclopedia","uz":"entsiklopediya"},
       "assets_need_update":false,
-      "asset_bundle_version":"1",
+      "asset_bundle_version":1,
       "asset_bundle_name":"seasons_book_bundle",
       "book_cover_path":"seasons_book_cover.jpg",
-      "book_cover_big_path":"seasons_book_cover_big.png",
+      "book_in_app_purchase_id":"com.colarit.books.seasons_book",
       "book_paid_type":2,
       "book_description":{
         "ru":"Как узнать, что пришла весна? Что происходит с природой летом? Почему деревья сбрасывают листья? Когда приходит зима? На все эти и другие вопросы ребенок найдет ответы в энциклопедии «Времена года».",
-        "en":"Coming soon.",
+        "en":"Has spring come yet? What changes nature endures in summer? Why trees drop leaves? When winter comes? With our coloring book kids can find answers to such questions and grasp the idea of what time and space are, to learn the names of the days of the week and months. The app will help a child to bring the panoramas to life and see seasons change in reality.",
         "uz":"Tez kunda."
       },
       "objects_has_declaration":true,
@@ -1030,23 +682,23 @@
     },
 
     {
-      "book_id": "16",
+      "book_id":16,
       "book_is_published":true,
-      "app_support_version": "4",
+      "app_support_version":4,
       "book_title": {"ru":"Транспорт", "uz":"Transport vositalari", "en":"Transport"},
       "book_name": "transport_book",
       "db_name": "transport_book",
-      "book_type_id":"3",
+      "book_type_id":3,
       "book_type_name":{"ru":"энциклопедия","en":"encyclopedia","uz":"entsiklopediya"},
       "assets_need_update":false,
-      "asset_bundle_version":"1",
+      "asset_bundle_version":1,
       "asset_bundle_name":"transport_book_bundle",
       "book_cover_path":"transport_book_cover.jpg",
-      "book_cover_big_path":"transport_book_cover_big.png",
+      "book_in_app_purchase_id":"com.colarit.books.transport_book",
       "book_paid_type":2,
       "book_description":{
         "ru":"Эта энциклопедия станет отличным подарком для мальчишек. Ведь она познакомит со средствами передвижения, которые часто встречаются на городских улицах.",
-        "en":"Coming soon.",
+        "en":"<size=28>This book is an awesome gift for boys. A guide for transportation means often seen in the city streets. It helps a child learn what vehicles are meant for rescue works, which ones are used in the construction, what motorcycle is and what is used for flying. By means of the app a child will watch his artwork come to life, view the animation from any angle and hear the sounds associated with each vehicle: an ambulance, a fire truck, a truck or an aircraft.</size>",
         "uz":"Tez kunda."
       },
       "objects_has_declaration":true,
@@ -1056,121 +708,261 @@
     },
 
     {
-      "book_id": "17",
+      "book_id":17,
       "book_is_published":true,
-      "app_support_version": "4",
+      "app_support_version":4,
       "book_title": {"ru":"Медвеженок Флафи", "uz":"Flaffi ayiqcha", "en":"Bear Flaffi"},
       "book_name": "flaffi_puzzle",
       "db_name": "flaffi_puzzle",
-      "book_type_id":"4",
+      "book_type_id":4,
       "book_type_name":{"ru":"пазлы","en":"puzzle","uz":"pazllar"},
       "assets_need_update":false,
-      "asset_bundle_version":"4",
+      "asset_bundle_version":4,
       "asset_bundle_name":"flaffi_puzzle_bundle",
       "book_cover_path":"flaffi_puzzle_cover.jpg",
-      "book_cover_big_path":"flaffi_puzzle_cover_big.png",
+      "book_in_app_purchase_id":"empty",
       "book_paid_type":2,
       "book_description":{
         "ru":"Этот 3D пазл поможет малышу очутиться в царстве громадных льдин и холодных снегов — на Севере. Мобильное приложение оживит белого  медвежонка Флафи, который познакомит ребенка со здешними жителями.",
         "en":"Coming soon.",
         "uz":"Tez kunda."
       },
-      "objects_has_declaration":false,
+      "objects_has_declaration":true,
       "has_in_app_purchase":false,
-      "objects":[
-        {"marker_name":"flaffi_marker", "obj_name":"flaffi_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.8,0.8,0.8], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"flaffi_story_sound", "back_sound":"empty", "action_sound":"empty"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[-90,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":300, "idle":[0,300],"idle2":[0,0],"action1":[0,0],"action2":[0,0],"action3":[0,0]}}
+      "objects":[        
       ]
     },
 
     {
-      "book_id": "18",
+      "book_id":18,
       "book_is_published":true,
-      "app_support_version": "4",
+      "app_support_version":4,
       "book_title": {"ru":"Пингви", "uz":"Penguin", "en":"Penguin"},
       "book_name": "penguin_puzzle",
       "db_name": "penguin_puzzle",
-      "book_type_id":"4",
+      "book_type_id":4,
       "book_type_name":{"ru":"пазлы","en":"puzzle","uz":"pazllar"},
       "assets_need_update":false,
-      "asset_bundle_version":"2",
+      "asset_bundle_version":2,
       "asset_bundle_name":"penguin_puzzle_bundle",
       "book_cover_path":"penguin_puzzle_cover.jpg",
-      "book_cover_big_path":"penguin_puzzle_cover_big.png",
+      "book_in_app_purchase_id":"empty",
       "book_paid_type":2,
       "book_description":{
         "ru":"Хотите надолго увлечь ребенка интересным и полезным занятием? 3D пазл «Пингвин Лоло» поможет в этом. Малыш отправится в увлекательное путешествие в подводный мир и познакомится с главными его обитателями — рыбами.",
         "en":"Coming soon.",
         "uz":"Tez kunda."
       },
-      "objects_has_declaration":false,
+      "objects_has_declaration":true,
       "has_in_app_purchase":false,
       "objects":[
-        {"marker_name":"penguin_marker", "obj_name":"penguin_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.4,0.4,0.4], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"penguin_story_sound", "back_sound":"empty", "action_sound":"empty"},
-          "object_rotation":[0,180,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":300, "idle":[0,300],"idle2":[0,0],"action1":[0,0],"action2":[0,0],"action3":[0,0]}}
       ]
     },
     {
-      "book_id": "19",
+      "book_id":19,
       "book_is_published":true,
-      "app_support_version": "4",
+      "app_support_version":4,
       "book_title": {"ru":"Стегозавр", "uz":"Stegozavr", "en":"Stegosaurus"},
       "book_name": "stegosaurus_puzzle",
       "db_name": "stegosaurus_puzzle",
-      "book_type_id":"4",
+      "book_type_id":4,
       "book_type_name":{"ru":"пазлы","en":"puzzle","uz":"pazllar"},
       "assets_need_update":false,
-      "asset_bundle_version":"1",
+      "asset_bundle_version":1,
       "asset_bundle_name":"stegosaurus_puzzle_bundle",
       "book_cover_path":"stegosaurus_puzzle_cover.jpg",
-      "book_cover_big_path":"stegosaurus_puzzle_cover_big.png",
+      "book_in_app_purchase_id":"empty",
       "book_paid_type":2,
       "book_description":{
         "ru":"Если ваш ребенок интересуется динозаврами, то 3D пазл «Стегозавр» ему обязательно понравится. Он не только научится собирать целостное изображение из нескольких маленьких частей, но и узнает много интересного из жизни этого гиганта.",
         "en":"Coming soon.",
         "uz":"Tez kunda."
       },
-      "objects_has_declaration":false,
+      "objects_has_declaration":true,
       "has_in_app_purchase":false,
       "objects":[
-        {"marker_name":"stegosaurus_marker", "obj_name":"stegosaurus_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.03,0.03,0.03], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"stegosaurus_story_sound", "back_sound":"empty", "action_sound":"stegosaurus_action_sound"},
-          "object_rotation":[0,270,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":1620, "idle":[0,120],"idle2":[0,0],"action1":[121,1620],"action2":[121,1620],"action3":[121,1620]}}
       ]
     },
 
     {
-      "book_id": "20",
+      "book_id":20,
       "book_is_published":true,
-      "app_support_version": "4",
+      "app_support_version":4,
       "book_title": {"ru":"Спинозавр", "uz":"Spinozavr", "en":"Spinosaurus"},
       "book_name": "spinosaurus_puzzle",
       "db_name": "spinosaurus_puzzle",
-      "book_type_id":"4",
+      "book_type_id":4,
       "book_type_name":{"ru":"пазлы","en":"puzzle","uz":"pazllar"},
       "assets_need_update":false,
-      "asset_bundle_version":"2",
+      "asset_bundle_version":2,
       "asset_bundle_name":"spinosaurus_puzzle_bundle",
       "book_cover_path":"spinosaurus_puzzle_cover.jpg",
-      "book_cover_big_path":"spinosaurus_puzzle_cover_big.png",
+      "book_in_app_purchase_id":"empty",
       "book_paid_type":2,
       "book_description":{
         "ru":"Пазл «Спинозавр», выполненный по технологии дополненной реальности, придется по душе неутомимым исследователям прошлого. После того, как ребенок соберет картинку, он увидит самого настоящего, живого, спинозавра.",
         "en":"Coming soon.",
         "uz":"Tez kunda."
       },
-      "objects_has_declaration":false,
+      "objects_has_declaration":true,
       "has_in_app_purchase":false,
       "objects":[
-        {"marker_name":"spinosaurus_marker", "obj_name":"spinosaurus_color", "opject_type":"common", "obj_pos":[0.0,0.0,0.0], "obj_scale":[0.02,0.02,0.02], "obj_back_name":"empty", 
-          "back_obj_scale":[0.2,0.2,0.2], "sounds":{"story_sound":"spinosaurus_story_sound", "back_sound":"empty", "action_sound":"spinosaurus_action_sound"},
-          "object_rotation":[0,270,0], "back_obj_rotation":[0,0,0], "texture_offset": [0.0, 0.0], "texture_scale":[1.0,1.0],
-          "animation":{"animation_class":"CoreAnimation", "animation_speed":"1","total_frames":2760, "idle":[0,2320],"idle2":[0,0],"action1":[2325,2755],"action2":[2325,2755],"action3":[2325,2755]}}
+      ]
+    },
+
+    {
+      "book_id":21,
+      "book_is_published":true,
+      "app_support_version":4,
+      "book_title": {"ru":"Учись с дополненной реальностью", "uz":"Learn with augmented reality", "en":"Learn with augmented reality"},
+      "book_name": "learn_with_ar_1_book",
+      "db_name": "learn_with_ar_1_book",
+      "book_type_id":3,
+      "book_type_name":{"ru":"энциклопедия","en":"encyclopedia","uz":"entsiklopediya"},
+      "assets_need_update":false,
+      "asset_bundle_version":1,
+      "asset_bundle_name":"learn_with_ar_1_book_bundle",
+      "book_cover_path":"learn_with_ar_1_book_cover.jpg",
+      "book_in_app_purchase_id":"empty",
+      "book_paid_type":2,
+      "book_description":{
+        "ru":"<size=25>Давно хотите купить ребенку «живую» книжку, но не знаете, какую выбрать? Компания COLAR предлагает отличное решение этой проблемы! Новый 4D сборник самых интересных энциклопедий из серии «Учись с дополненной реальностью»! В книге формата А5 собрано по одной страничке из энциклопедий «Мир динозавров», «Геометрические фигуры», «Объемные фигуры», «Веселые цифры», «Космос», «Транспорт и техника», «Мир животных» и «Времена года». Предоставьте малышу возможность выбора — пусть он сам решит, что ему больше всего нравится!</size>",
+        "en":"Coming soon.",
+        "uz":"Tez kunda."
+      },
+      "objects_has_declaration":true,
+      "has_in_app_purchase":false,
+      "objects":[
+      ]
+    },
+
+    {
+      "book_id":22,
+      "book_is_published":true,
+      "app_support_version":6,
+      "book_title": {"ru":"Семь чудес света", "uz":"Yetti mo'jiza", "en":"Seven Wonders"},
+      "book_name": "seven_wonders_book",
+      "db_name": "seven_wonders_book",
+      "book_type_id":3,
+      "book_type_name":{"ru":"энциклопедия","en":"encyclopedia","uz":"entsiklopediya"},
+      "assets_need_update":false,
+      "asset_bundle_version":1,
+      "asset_bundle_name":"seven_wonders_book_bundle",
+      "book_cover_path":"seven_wonders_book_cover.jpg",
+      "book_in_app_purchase_id":"com.colarit.books.seven_wonders_book",
+      "book_paid_type":2,
+      "book_description":{
+        "ru":"<size=25>Энциклопедия «Семь чудес древности» обязательно понравится юным исследователям прошлого. Она познакомит с известными архитектурными памятниками, созданными много лет назад. Ребенок отправится в далекое путешествие и увидит египетские пирамиды, сады Семирамиды, статую Зевса, Александрийский маяк и другие чудеса света. Мобильное приложение оживит плоские картинки, позволяя внимательно рассмотреть их со всех сторон. Эту книгу можно не только читать, но и слушать — имеется аудиосопровождение.</size>",
+        "en":"<size=25>The seven wonders of the ancient world encyclopedia is here to please young researchers of the past. It will introduce your child with the ancient yet world famous architectural monuments and take him on a joyful journey to see the Egyptian pyramids, the Hanging Gardens of Babylon, the Statue of Zeus at Olympia, The Lighthouse of Alexandria and other prominent wonders. The app will help turning flat shapes into realistic images, so the animation can be viewed from any angle and the variety of audio features will enhance the ‘wow’ effect.</size>",
+        "uz":"Tez kunda."
+      },
+      "objects_has_declaration":true,
+      "has_in_app_purchase":false,
+      "objects":[
+      ]
+    },
+
+    {
+      "book_id":23,
+      "book_is_published":false,
+      "app_support_version":6,
+      "book_title": {"ru":"Азбука", "uz":"Alifbo", "en":"ABC"},
+      "book_name": "abc_book",
+      "db_name": "abc_book",
+      "book_type_id":3,
+      "book_type_name":{"ru":"энциклопедия","en":"encyclopedia","uz":"entsiklopediya"},
+      "assets_need_update":false,
+      "asset_bundle_version":1,
+      "asset_bundle_name":"abc_book_bundle",
+      "book_cover_path":"abc_book_cover.jpg",
+      "book_in_app_purchase_id":"com.colarit.books.abc_book",
+      "book_paid_type":2,
+      "book_description":{
+        "ru":"<size=25>«Веселая азбука» в 3D формате превратит изучение алфавита в веселую игру. Малыш будет с удовольствием разглядывать яркие иллюстрации и слушать забавные стихи. Это красочное издание станет одним из самых любимых в детской домашней библиотеке. Книга, выполненная по технологии дополненной реальности, понравится даже тем, кто хорошо знаком со всеми буквами. С помощью мобильного приложения ребенок оживит симпатичных животных и быстро выучит наизусть коротенькие стишки.</size>",
+        "en":"Coming soon.",
+        "uz":"Tez kunda."
+      },
+      "objects_has_declaration":true,
+      "has_in_app_purchase":false,
+      "objects":[
+      ]
+    },
+
+    {
+      "book_id":24,
+      "book_is_published":true,
+      "app_support_version":6,
+      "book_title": {"ru":"Мир животных", "uz":"Hayvonlar dunyosi", "en":"Animal world"},
+      "book_name": "animals2_book",
+      "db_name": "animals2_book",
+      "book_type_id":3,
+      "book_type_name":{"ru":"энциклопедия","en":"encyclopedia","uz":"entsiklopediya"},
+      "assets_need_update":false,
+      "asset_bundle_version":1,
+      "asset_bundle_name":"animals2_book_bundle",
+      "book_cover_path":"animals2_book_cover.jpg",
+      "book_in_app_purchase_id":"com.colarit.books.animals2_book",
+      "book_paid_type":2,
+      "book_description":{
+        "ru":"<size=22>Энциклопедия «Мир животных» познакомит с самыми интересными представителями животного мира. Ребенок узнает много интересного и полезного, найдет ответы на множество вопросов — почему свиньи любят лежать в грязи, кто является самой красивой хищницей, как называется жилище волка, у кого самый необычный в мире нос. Книга выполнена с применением технологии дополненной реальности. С помощью мобильного приложения можно оживить животных, рассмотреть их со всех сторон, услышать, какие звуки они издают. Живая 3D энциклопедия имеет аудиосопровождение, а значит, понравится не только детям школьного возраста, но и малышам, которые еще не умеют читать.</size>",
+        "en":"<size=22>The Animals world AR encyclopedia presents a collection of the fauna’s most prominent animals on the planet. Interesting topics will add another dimension to the reading experience of your child in his quest to find answers to many questions, like: why do pigs enjoy wallowing in the mud? Or what predator is the most beautiful? Or what the wolf’s dwelling place is called? Or which animal has got the most unusual snout? By means of the app a child will watch his artwork come to life, view the animation from any angle and hear the sounds associated with each animal. Interesting facts in 3D live encyclopedia are provided with audio support, so it will engage readers of any age, even the preschoolers enable to read yet.</size>",
+        "uz":"Tez kunda."
+      },
+      "objects_has_declaration":true,
+      "has_in_app_purchase":false,
+      "objects":[
+      ]
+    },
+
+    {
+      "book_id":25,
+      "book_is_published":true,
+      "app_support_version":1,
+      "book_title": {"ru":"Наши профессии", "uz":"Bizning kasblar", "en":"Our profession"},
+      "book_name": "professions2_book",
+      "db_name": "professions2_book",
+      "book_type_id":3,
+      "book_type_name":{"ru":"энциклопедия","en":"encyclopedia","uz":"entsiklopediya"},
+      "assets_need_update":false,
+      "asset_bundle_version":1,
+      "asset_bundle_name":"professions2_book_bundle",
+      "book_cover_path":"professions2_book_cover.jpg",
+      "book_in_app_purchase_id":"com.colarit.books.professions2_book",
+      "book_paid_type":2,
+      "book_description":{
+        "ru":"Энциклопедия «Наши профессии» познакомит ребенка с новыми интересными людьми. Он узнает, чем занимаются дальнобойщик, системный администратор, космонавт, пожарный и рабочие других специальностей и, возможно, сумеет определиться, кем он хочет стать в будущем.",
+        "en":"The Occupations 3D live encyclopedia will enable the child to distinguish between the trucker and the system administrator, or the astronaut and the fire-fighter and other workers, to know more about their work functions and, perhaps, it will help him/her determine own future.",
+        "uz":"Tez kunda."
+      },
+      "objects_has_declaration":true,
+      "has_in_app_purchase":false,
+      "objects":[
+      ]
+    },
+
+    {
+      "book_id":26,
+      "book_is_published":true,
+      "app_support_version":8,
+      "book_title": {"ru":"Демо", "uz":"Demo", "en":"Demo"},
+      "book_name": "demo_juice",
+      "db_name": "demo_juice",
+      "book_type_id":1,
+      "book_type_name":{"ru":"промо","en":"promo","uz":"promo"},
+      "assets_need_update":false,
+      "asset_bundle_version":1,
+      "asset_bundle_name":"demo_juice_bundle",
+      "book_cover_path":"demo_juice_cover.jpg",
+      "book_in_app_purchase_id":"empty",
+      "book_paid_type":1,
+      "book_description":{
+        "ru":"Скоро.",
+        "en":"Coming soon.",
+        "uz":"Tez kunda."
+      },
+      "objects_has_declaration":true,
+      "has_in_app_purchase":false,
+      "objects":[
       ]
     }
   ]
