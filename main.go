@@ -9,6 +9,7 @@ import (
 	"github.com/korasdor/colarit/handler"
 	"github.com/korasdor/colarit/services"
 	"os"
+	"github.com/korasdor/colarit/utils"
 )
 
 func main() {
@@ -20,6 +21,11 @@ func main() {
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "8080"
+	}
+
+	result := utils.UpdateBooksTemplate()
+	if result == false {
+		utils.PrintOutput("Update book error")
 	}
 
 	r := mux.NewRouter()
@@ -46,6 +52,6 @@ func main() {
 	fmt.Printf("listening on %s...\n", port)
 	err := http.ListenAndServe(":"+port, r)
 	if err != nil {
-		panic(err)
+		utils.PrintOutput(err.Error())
 	}
 }
