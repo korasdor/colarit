@@ -198,7 +198,6 @@ func ActivateSerialsHandler(w http.ResponseWriter, r *http.Request) {
 	serialKey := vars["serial_key"]
 
 	result, tryCount := services.SerialCheck(tableName, serialKey)
-	fmt.Println(tryCount)
 	fmt.Fprintf(w, "{is_activated:%t}", result)
 
 	go services.SerialUpdate(tableName, tryCount, serialKey)
