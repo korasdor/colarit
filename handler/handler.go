@@ -191,21 +191,17 @@ func GetSerialsHandler(w http.ResponseWriter, r *http.Request) {
  * активация серийника
  */
 func ActivateSerialsHandler(w http.ResponseWriter, r *http.Request) {
-	result := true
+	var result bool
 
 	vars := mux.Vars(r)
 	tableName := vars["table_name"]
 	serialKey := vars["serial_key"]
 
-	canActivate, tryCount := services.SerialCheck(tableName, serialKey)
-
-	if canActivate {
-		result = services.SerialUpdate(tableName, tryCount, serialKey)
-	} else {
-		result = false
-	}
-
+	result, tryCount := services.SerialCheck(tableName, serialKey)
+	fmt.Println(tryCount)
 	fmt.Fprintf(w, "{is_activated:%t}", result)
+
+	go services.SerialUpdate(tableName, tryCount, serialKey)
 }
 
 /**

@@ -8,7 +8,7 @@
     {
       "book_id":0,
       "book_is_published":true,
-      "app_support_version":2,
+      "app_support_version":20,
       "book_name": "demos_book",      
       "db_name": "demos_book",
       "book_type_id":1,
@@ -756,7 +756,7 @@
 
     {
       "book_id":23,
-      "book_is_published":false,
+      "book_is_published":true,
       "app_support_version":6,
       "book_name": "abc_book",
       "db_name": "abc_book",
@@ -846,6 +846,54 @@
       },
       "objects_has_declaration":true,
       "has_in_app_purchase":false,
+      "objects":[
+      ]
+    },
+
+    {
+      "book_id":27,
+      "book_is_published":true,
+      "app_support_version":8,
+      "book_name": "demo_coloring",
+      "db_name": "demo_coloring",
+      "book_type_id":1,
+      "assets_need_update":false,
+      "asset_bundle_version":1,
+      "asset_bundle_name":"demo_coloring_bundle",
+      "book_cover_path":"demo_coloring_cover.jpg",
+      "book_in_app_purchase_id":"empty",
+      "book_paid_type":1,
+      "book_description":{
+        "ru":"Скоро.",
+        "en":"Coming soon.",
+        "uz":"Tez kunda."
+      },
+      "objects_has_declaration":true,
+      "has_in_app_purchase":true,
+      "objects":[
+      ]
+    },
+
+    {
+      "book_id":28,
+      "book_is_published":true,
+      "app_support_version":8,
+      "book_name": "demo_encyclopedia",
+      "db_name": "demo_encyclopedia",
+      "book_type_id":1,
+      "assets_need_update":false,
+      "asset_bundle_version":1,
+      "asset_bundle_name":"demo_encyclopedia_bundle",
+      "book_cover_path":"demo_encyclopedia_cover.jpg",
+      "book_in_app_purchase_id":"empty",
+      "book_paid_type":1,
+      "book_description":{
+        "ru":"Скоро.",
+        "en":"Coming soon.",
+        "uz":"Tez kunda."
+      },
+      "objects_has_declaration":true,
+      "has_in_app_purchase":true,
       "objects":[
       ]
     }
