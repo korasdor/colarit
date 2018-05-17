@@ -39,10 +39,28 @@ func BooksHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Cache-Control", "no-cache, no-store, must-revalidate")
 	w.Header().Set("Pragma", "no-cache")
 
-	clientIp := r.Header.Get("X-Forwarded-For")
-	country := utils.GetCountry(clientIp)
+	//clientIp := r.Header.Get("X-Forwarded-For")
+	//country := utils.GetCountry(clientIp)
 
-	booksJsonStr := utils.GetBooksJson(country)
+	booksJsonStr := utils.GetBooksJson("")
+
+	fmt.Fprint(w, string(booksJsonStr))
+}
+
+/**
+ * получить файл настроек книг.
+ */
+func BooksLangHandler(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Cache-Control", "no-cache, no-store, must-revalidate")
+	w.Header().Set("Pragma", "no-cache")
+
+	//clientIp := r.Header.Get("X-Forwarded-For")
+	//country := utils.GetCountry(clientIp)
+
+	vars := mux.Vars(r)
+	lang := vars["lang"]
+
+	booksJsonStr := utils.GetBooksJson(lang)
 
 	fmt.Fprint(w, string(booksJsonStr))
 }
@@ -56,6 +74,21 @@ func UpdateBooksHandler(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprint(w, "bad")
 	}
 }
+
+func UpdateBooksLangHandler(w http.ResponseWriter, r *http.Request) {
+	vars := mux.Vars(r)
+	lang := vars["lang"]
+
+	result := utils.UpdateBooksLangTemplate(lang)
+
+	if result == true {
+		fmt.Fprint(w, "good")
+	} else {
+		fmt.Fprint(w, "bad")
+	}
+}
+
+
 
 /**
  * создаем таблицу

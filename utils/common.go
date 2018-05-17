@@ -5,16 +5,14 @@ import (
 	"github.com/oschwald/geoip2-golang"
 	"net"
 	"io/ioutil"
-	"encoding/json"
 	"net/http"
 	"bytes"
 	"errors"
 )
 
 var (
-	GEO_LITE_FILE_PATH  string = "static/data/GeoLite2-Country.mmdb"
-	TEMPLATE_LOCAL_PATH string = "templates/books.json"
-	TEMPLATE_REMOTE_URL string = "http://colarit.com/colar/templates/books.json"
+	GEO_LITE_FILE_PATH string = "static/data/GeoLite2-Country.mmdb"
+	TEMPLATES_URL      string = "http://colarit.com/colar/templates/"
 )
 
 func FormatSerials(serials []string, serialFormat string) (string, error) {
@@ -65,9 +63,29 @@ func GetCountry(clientIp string) string {
 	return country
 }
 
+func UpdateAllBooksTemplates() bool {
+	var result = true
+
+	result = UpdateBooksTemplate()
+	if result == false {
+		return result
+	}
+
+	langs := [4]string{"ru", "en", "uz", "kz"}
+	for i := 0; i < len(langs); i++ {
+		result = UpdateBooksLangTemplate(langs[i])
+
+		if result == false {
+			break
+		}
+	}
+
+	return result
+}
+
 func UpdateBooksTemplate() bool {
 	var result = true
-	response, err := http.Get(TEMPLATE_REMOTE_URL)
+	response, err := http.Get(TEMPLATES_URL + "books.json")
 	if err != nil {
 		result = false
 		PrintOutput(err.Error())
@@ -79,7 +97,7 @@ func UpdateBooksTemplate() bool {
 			PrintOutput(err.Error())
 		}
 
-		err = ioutil.WriteFile(TEMPLATE_LOCAL_PATH, contents, 0644)
+		err = ioutil.WriteFile("templates/books.json", contents, 0644)
 		if err != nil {
 			result = false
 			PrintOutput(err.Error())
@@ -89,35 +107,65 @@ func UpdateBooksTemplate() bool {
 	return result
 }
 
-func GetBooksJson(country string) []byte {
-	var bookJsonStr []byte
-
-	b, err := ioutil.ReadFile(TEMPLATE_LOCAL_PATH)
+func UpdateBooksLangTemplate(lang string) bool {
+	var result = true
+	response, err := http.Get(TEMPLATES_URL + lang + "/books.json")
 	if err != nil {
-		PrintOutput(err.Error())
-	}
-
-	var dat map[string]interface{}
-	if err := json.Unmarshal(b, &dat); err != nil {
+		result = false
 		PrintOutput(err.Error())
 	} else {
-
-		if country == "UZ" {
-			dat["assets_server"] = "http://colarit.com/colar"
-			dat["supported_langs"] = []string{"en", "ru", "uz"}
-			// dat["assets_server"] = "http://colar.uz"
-		} else {
-			dat["assets_server"] = "http://colarit.com/colar"
-			dat["supported_langs"] = []string{"en", "ru"}
+		defer response.Body.Close()
+		contents, err := ioutil.ReadAll(response.Body)
+		if err != nil {
+			result = false
+			PrintOutput(err.Error())
 		}
 
-		bookJsonStr, err = json.Marshal(dat)
+		err = ioutil.WriteFile("templates/"+lang+"/books.json", contents, 0644)
 		if err != nil {
+			result = false
 			PrintOutput(err.Error())
 		}
 	}
 
-	return bookJsonStr
+	return result
+}
+
+func GetBooksJson(lang string) []byte {
+	//var bookJsonStr []byte
+
+	var filepath string
+	if lang == "" {
+		filepath = "templates/books.json"
+	} else {
+		filepath = "templates/" + lang + "/books.json"
+	}
+
+	booksBytes, err := ioutil.ReadFile(filepath)
+	if err != nil {
+		PrintOutput(err.Error())
+	}
+	//var dat map[string]interface{}
+	//if err := json.Unmarshal(booksBytes, &dat); err != nil {
+	//	PrintOutput(err.Error())
+	//} else {
+	//
+	//	if lang == "UZ" {
+	//		dat["assets_server"] = "http://colarit.com/colar"
+	//		dat["supported_langs"] = []string{"en", "ru", "uz"}
+	//		// dat["assets_server"] = "http://colar.uz"
+	//	} else {
+	//		dat["assets_server"] = "http://colarit.com/colar"
+	//		dat["supported_langs"] = []string{"en", "ru"}
+	//	}
+	//
+	//	bookJsonStr, err = json.Marshal(dat)
+	//	if err != nil {
+	//		PrintOutput(err.Error())
+	//	}
+	//}
+
+	return booksBytes
 }
 
 func PrintOutput(str string) {

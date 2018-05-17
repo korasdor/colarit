@@ -23,7 +23,7 @@ func main() {
 		port = "8080"
 	}
 
-	result := utils.UpdateBooksTemplate()
+	result := utils.UpdateAllBooksTemplates()
 	if result == false {
 		utils.PrintOutput("Update book error")
 	}
@@ -32,7 +32,9 @@ func main() {
 	r.HandleFunc("/", handler.IndexHandler)
 	r.HandleFunc("/db_state", handler.DBStateHandler)
 	r.HandleFunc("/books", handler.BooksHandler)
+	r.HandleFunc("/books/{lang}", handler.BooksLangHandler)
 	r.HandleFunc("/update_books_template", handler.UpdateBooksHandler)
+	r.HandleFunc("/update_books_template/{lang}", handler.UpdateBooksLangHandler)
 
 	r.HandleFunc("/create_table/{table_name}/{access_token}", handler.CreateTableHandler)
 	r.HandleFunc("/fill_table/{table_name}/{serials_count}/{range_id}/{dealer_id}/{access_token}", handler.FillTableHandler)
