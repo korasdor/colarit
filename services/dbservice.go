@@ -124,9 +124,7 @@ func SerialCheck(tableName string, key string) (bool, int) {
 	if err != nil {
 		result = false
 		utils.PrintOutput(err.Error())
-	}
-
-	if rows.Next() == true {
+	}else if rows.Next() == true {
 		result = true
 		var serialKey string
 		var maxActivations int

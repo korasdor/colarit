@@ -40,7 +40,7 @@
       "book_paid_type":2,
       "objects_has_declaration":true,
       "is_multilang_declaration":false,
-      "has_in_app_purchase":true,
+      "has_in_app_purchase":false,
       "objects":[
       ]
     },
@@ -60,7 +60,7 @@
       "book_paid_type":2,
       "objects_has_declaration":true,
       "is_multilang_declaration":false,
-      "has_in_app_purchase":true,
+      "has_in_app_purchase":false,
       "objects":[
       ]
     },
@@ -80,7 +80,7 @@
       "book_paid_type":2,
       "objects_has_declaration":true,
       "is_multilang_declaration":false,
-      "has_in_app_purchase":true,
+      "has_in_app_purchase":false,
       "objects":[
       ]
     },
@@ -99,7 +99,7 @@
       "book_paid_type":2,
       "objects_has_declaration":true,
       "is_multilang_declaration":false,
-      "has_in_app_purchase":true,
+      "has_in_app_purchase":false,
       "objects":[
       ]
     },
@@ -118,7 +118,7 @@
       "book_paid_type":2,
       "objects_has_declaration":true,
       "is_multilang_declaration":false,
-      "has_in_app_purchase":true,
+      "has_in_app_purchase":false,
       "objects":[
       ]
     },
@@ -138,7 +138,7 @@
       "book_paid_type":2,
       "objects_has_declaration":true,
       "is_multilang_declaration":false,
-      "has_in_app_purchase":true,
+      "has_in_app_purchase":false,
       "objects":[
       ]
     },
@@ -158,7 +158,7 @@
       "book_paid_type":2,
       "objects_has_declaration":true,
       "is_multilang_declaration":false,
-      "has_in_app_purchase":true,
+      "has_in_app_purchase":false,
       "objects":[
       ]
     },
@@ -198,7 +198,7 @@
       "book_paid_type":2,
       "objects_has_declaration":true,
       "is_multilang_declaration":false,
-      "has_in_app_purchase":true,
+      "has_in_app_purchase":false,
       "objects":[
       ]
     },
@@ -218,7 +218,7 @@
       "book_paid_type":2,
       "objects_has_declaration":true,
       "is_multilang_declaration":false,
-      "has_in_app_purchase":true,
+      "has_in_app_purchase":false,
       "objects":[
       ]
     },
@@ -231,14 +231,14 @@
       "db_name": "digits_book",
       "book_type_id":3,
       "assets_need_update":false,
-      "asset_bundle_version":1,
+      "asset_bundle_version":2,
       "asset_bundle_name":"digits_book_bundle",
       "book_cover_path":"digits_book_cover.jpg",
       "book_in_app_purchase_id":"com.colarit.books.digits_book",
       "book_paid_type":2,
       "objects_has_declaration":true,
       "is_multilang_declaration":false,
-      "has_in_app_purchase":true,
+      "has_in_app_purchase":false,
       "objects":[
       ]
     },
@@ -251,14 +251,14 @@
       "db_name": "seasons_book",
       "book_type_id":3,
       "assets_need_update":false,
-      "asset_bundle_version":1,
+      "asset_bundle_version":2,
       "asset_bundle_name":"seasons_book_bundle",
       "book_cover_path":"seasons_book_cover.jpg",
       "book_in_app_purchase_id":"com.colarit.books.seasons_book",
       "book_paid_type":2,
       "objects_has_declaration":true,
       "is_multilang_declaration":false,
-      "has_in_app_purchase":true,
+      "has_in_app_purchase":false,
       "objects":[
       ]
     },
@@ -278,7 +278,7 @@
       "book_paid_type":2,
       "objects_has_declaration":true,
       "is_multilang_declaration":false,
-      "has_in_app_purchase":true,
+      "has_in_app_purchase":false,
       "objects":[
       ]
     },
@@ -397,7 +397,7 @@
       "book_paid_type":2,
       "objects_has_declaration":true,
       "is_multilang_declaration":false,
-      "has_in_app_purchase":true,
+      "has_in_app_purchase":false,
       "objects":[
       ]
     },
@@ -417,7 +417,7 @@
       "book_paid_type":2,
       "objects_has_declaration":true,
       "is_multilang_declaration":false,
-      "has_in_app_purchase":true,
+      "has_in_app_purchase":false,
       "objects":[
       ]
     },
@@ -437,7 +437,7 @@
       "book_paid_type":2,
       "objects_has_declaration":true,
       "is_multilang_declaration":false,
-      "has_in_app_purchase":true,
+      "has_in_app_purchase":false,
       "objects":[
       ]
     },
@@ -457,7 +457,7 @@
       "book_paid_type":2,
       "objects_has_declaration":true,
       "is_multilang_declaration":false,
-      "has_in_app_purchase":true,
+      "has_in_app_purchase":false,
       "objects":[
       ]
     },
@@ -477,7 +477,7 @@
       "book_paid_type":1,
       "objects_has_declaration":true,
       "is_multilang_declaration":false,
-      "has_in_app_purchase":true,
+      "has_in_app_purchase":false,
       "objects":[
       ]
     },
@@ -487,7 +487,7 @@
       "app_support_version":8,
       "book_name": "funny_pages_vol_1",
       "db_name": "funny_pages_vol_1",
-      "book_type_id":1,
+      "book_type_id":5,
       "assets_need_update":false,
       "asset_bundle_version":1,
       "asset_bundle_name":"funny_pages_vol_1_bundle",
@@ -496,14 +496,14 @@
       "book_paid_type":1,
       "objects_has_declaration":true,
       "is_multilang_declaration":false,
-      "has_in_app_purchase":true,
+      "has_in_app_purchase":false,
       "objects":[
       ]
     },
 
     {
       "book_id":30,
-      "book_is_published":true,
+      "book_is_published":false,
       "app_support_version":8,
       "book_name": "znayka_book",
       "db_name": "znayka_book",
@@ -522,7 +522,7 @@
     },
     {
       "book_id":31,
-      "book_is_published":true,
+      "book_is_published":false,
       "app_support_version":10,
       "book_name": "constitution_book",
       "db_name": "constitution_book",
@@ -541,7 +541,7 @@
     },
     {
       "book_id":32,
-      "book_is_published":true,
+      "book_is_published":false,
       "app_support_version":8,
       "book_name": "pdd_book",
       "db_name": "pdd_book",
@@ -561,7 +561,7 @@
 
     {
       "book_id":33,
-      "book_is_published":true,
+      "book_is_published":false,
       "app_support_version":8,
       "book_name": "dono_word_book",
       "db_name": "dono_word_book",
@@ -581,7 +581,7 @@
 
     {
       "book_id":34,
-      "book_is_published":true,
+      "book_is_published":false,
       "app_support_version":8,
       "book_name": "bilimdon_book",
       "db_name": "bilimdon_book",
@@ -597,7 +597,159 @@
       "has_in_app_purchase":false,
       "objects":[
       ]
-    }
+    },
 
+    {
+      "book_id":35,
+      "book_is_published":false,
+      "app_support_version":8,
+      "book_name": "cyber_cars_book",
+      "db_name": "cyber_cars_book",
+      "book_type_id":2,
+      "assets_need_update":false,
+      "asset_bundle_version":1,
+      "asset_bundle_name":"cyber_cars_book_bundle",
+      "book_cover_path":"cyber_cars_book_cover.jpg",
+      "book_in_app_purchase_id":"empty",
+      "book_paid_type":2,
+      "objects_has_declaration":true,
+      "is_multilang_declaration":false,
+      "has_in_app_purchase":false,
+      "objects":[
+      ]
+    },
+    {
+      "book_id":36,
+      "book_is_published":false,
+      "app_support_version":8,
+      "book_name": "favorite_heroes2_book",
+      "db_name": "favorite_heroes2_book",
+      "book_type_id":2,
+      "assets_need_update":false,
+      "asset_bundle_version":1,
+      "asset_bundle_name":"favorite_heroes2_book_bundle",
+      "book_cover_path":"favorite_heroes2_book_cover.jpg",
+      "book_in_app_purchase_id":"empty",
+      "book_paid_type":2,
+      "objects_has_declaration":true,
+      "is_multilang_declaration":false,
+      "has_in_app_purchase":false,
+      "objects":[
+      ]
+    },
+    {
+      "book_id":37,
+      "book_is_published":false,
+      "app_support_version":8,
+      "book_name": "favorite_heroes3_book",
+      "db_name": "favorite_heroes3_book",
+      "book_type_id":2,
+      "assets_need_update":false,
+      "asset_bundle_version":1,
+      "asset_bundle_name":"favorite_heroes3_book_bundle",
+      "book_cover_path":"favorite_heroes3_book_cover.jpg",
+      "book_in_app_purchase_id":"empty",
+      "book_paid_type":2,
+      "objects_has_declaration":true,
+      "is_multilang_declaration":false,
+      "has_in_app_purchase":false,
+      "objects":[
+      ]
+    },
+    {
+      "book_id":38,
+      "book_is_published":false,
+      "app_support_version":8,
+      "book_name": "princess_academy_book",
+      "db_name": "princess_academy_book",
+      "book_type_id":2,
+      "assets_need_update":false,
+      "asset_bundle_version":1,
+      "asset_bundle_name":"princess_academy_book_bundle",
+      "book_cover_path":"princess_academy_book_cover.jpg",
+      "book_in_app_purchase_id":"empty",
+      "book_paid_type":2,
+      "objects_has_declaration":true,
+      "is_multilang_declaration":false,
+      "has_in_app_purchase":false,
+      "objects":[
+      ]
+    },
+    {
+      "book_id":39,
+      "book_is_published":true,
+      "app_support_version":8,
+      "book_name": "santas_book",
+      "db_name": "santas_book",
+      "book_type_id":3,
+      "assets_need_update":false,
+      "asset_bundle_version":1,
+      "asset_bundle_name":"santas_book_bundle",
+      "book_cover_path":"santas_book_cover.jpg",
+      "book_in_app_purchase_id":"empty",
+      "book_paid_type":2,
+      "objects_has_declaration":true,
+      "is_multilang_declaration":false,
+      "has_in_app_purchase":false,
+      "objects":[
+      ]
+    },
+    {
+      "book_id":40,
+      "book_is_published":true,
+      "app_support_version":8,
+      "book_name": "tools_book",
+      "db_name": "tools_book",
+      "book_type_id":3,
+      "assets_need_update":false,
+      "asset_bundle_version":1,
+      "asset_bundle_name":"tools_book_bundle",
+      "book_cover_path":"tools_book_cover.jpg",
+      "book_in_app_purchase_id":"empty",
+      "book_paid_type":2,
+      "objects_has_declaration":true,
+      "is_multilang_declaration":false,
+      "has_in_app_purchase":false,
+      "objects":[
+      ]
+    },
+    {
+      "book_id":41,
+      "book_is_published":true,
+      "app_support_version":8,
+      "book_name": "water_world_book",
+      "db_name": "water_world_book",
+      "book_type_id":3,
+      "assets_need_update":false,
+      "asset_bundle_version":1,
+      "asset_bundle_name":"water_world_book_bundle",
+      "book_cover_path":"water_world_book_cover.jpg",
+      "book_in_app_purchase_id":"empty",
+      "book_paid_type":2,
+      "objects_has_declaration":true,
+      "is_multilang_declaration":false,
+      "has_in_app_purchase":false,
+      "objects":[
+      ]
+    },
+    {
+      "book_id":42,
+      "book_is_published":true,
+      "app_support_version":8,
+      "book_name": "fruits_book",
+      "db_name": "fruits_book",
+      "book_type_id":3,
+      "assets_need_update":false,
+      "asset_bundle_version":1,
+      "asset_bundle_name":"fruits_book_bundle",
+      "book_cover_path":"fruits_book_cover.jpg",
+      "book_in_app_purchase_id":"empty",
+      "book_paid_type":2,
+      "objects_has_declaration":true,
+      "is_multilang_declaration":false,
+      "has_in_app_purchase":false,
+      "objects":[
+      ]
+    }
   ]
 }
