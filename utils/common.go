@@ -12,7 +12,7 @@ import (
 
 var (
 	GEO_LITE_FILE_PATH string = "static/data/GeoLite2-Country.mmdb"
-	TEMPLATES_URL      string = "http://colarit.com/colar/templates/"
+	TEMPLATES_URL      string = "http://colarit.com/pear/templates/"
 )
 
 func FormatSerials(serials []string, serialFormat string) (string, error) {
