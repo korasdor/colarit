@@ -1,30 +1,11 @@
 {
   "last_app_verson":9,
-  "assets_server":"http://colarit.com/colar",
-  "langs_path":"http://colarit.com/colar/langs/langs.json",
-  "supported_langs":[],
+  "assets_server":"http://colarit.com/pearkid",
+  "langs_path":"http://colarit.com/pearkid/langs/langs.json",
+  "store_android_path":"http://pearkid.com",
+  "store_ios_path":"http://pearkid.com",
+  "category_imgs":["coloring_img.png","encyclopedy_img.png","promo_img.png","puzzle_img.png"],
   "books": [
-
-    {
-      "book_id":0,
-      "book_is_published":true,
-      "app_support_version":20,
-      "book_name": "demos_book",      
-      "db_name": "demos_book",
-      "book_type_id":1,
-      "assets_need_update":false,
-      "asset_bundle_version":7,
-      "asset_bundle_name":"demos_book_bundle",
-      "book_cover_path":"demos_book_cover.jpg",
-      "book_in_app_purchase_id":"empty",
-      "book_paid_type":1,
-      "objects_has_declaration":true,
-      "is_multilang_declaration":false,
-      "has_in_app_purchase":false,
-      "objects":[
-      ] 
-    },
-    
     {
       "book_id": 4,
       "book_is_published":true,
@@ -143,65 +124,7 @@
       ]
     },
 
-    {
-      "book_id":10,
-      "book_is_published":true,
-      "app_support_version":4,
-      "book_name": "geom2d_book",
-      "db_name": "geom2d_book",
-      "book_type_id":3,
-      "assets_need_update":false,
-      "asset_bundle_version":1,
-      "asset_bundle_name":"geom2d_book_bundle",
-      "book_cover_path":"geom2d_book_cover.jpg",
-      "book_in_app_purchase_id":"com.colarit.books.geom2d_book",
-      "book_paid_type":2,
-      "objects_has_declaration":true,
-      "is_multilang_declaration":false,
-      "has_in_app_purchase":false,
-      "objects":[
-      ]
-    },
-
-    {
-      "book_id":11,
-      "book_is_published":true,
-      "app_support_version":4,
-      "book_name": "olympic_puzzle",
-      "db_name": "olympic_puzzle",
-      "book_type_id":4,
-      "assets_need_update":false,
-      "asset_bundle_version":1,
-      "asset_bundle_name":"olympic_puzzle_bundle",
-      "book_cover_path":"olympic_puzzle_cover.jpg",
-      "book_in_app_purchase_id":"empty",
-      "book_paid_type":2,
-      "objects_has_declaration":true,
-      "is_multilang_declaration":false,
-      "has_in_app_purchase":false,
-      "objects":[
-      ]
-    },
-
-    {
-      "book_id":12,
-      "book_is_published":true,
-      "app_support_version":4,
-      "book_name": "geom3d_book",
-      "db_name": "geom3d_book",
-      "book_type_id":3,
-      "assets_need_update":false,
-      "asset_bundle_version":1,
-      "asset_bundle_name":"geom3d_book_bundle",
-      "book_cover_path":"geom3d_book_cover.jpg",
-      "book_in_app_purchase_id":"com.colarit.books.geom3d_book",
-      "book_paid_type":2,
-      "objects_has_declaration":true,
-      "is_multilang_declaration":false,
-      "has_in_app_purchase":false,
-      "objects":[
-      ]
-    },
+    
 
     {
       "book_id":13,
@@ -262,7 +185,6 @@
       "objects":[
       ]
     },
-
     {
       "book_id":16,
       "book_is_published":true,
@@ -282,106 +204,6 @@
       "objects":[
       ]
     },
-
-    {
-      "book_id":17,
-      "book_is_published":true,
-      "app_support_version":4,
-      "book_name": "flaffi_puzzle",
-      "db_name": "flaffi_puzzle",
-      "book_type_id":4,
-      "assets_need_update":false,
-      "asset_bundle_version":4,
-      "asset_bundle_name":"flaffi_puzzle_bundle",
-      "book_cover_path":"flaffi_puzzle_cover.jpg",
-      "book_in_app_purchase_id":"empty",
-      "book_paid_type":2,
-      "objects_has_declaration":true,
-      "is_multilang_declaration":false,
-      "has_in_app_purchase":false,
-      "objects":[        
-      ]
-    },
-
-    {
-      "book_id":18,
-      "book_is_published":true,
-      "app_support_version":4,
-      "book_name": "penguin_puzzle",
-      "db_name": "penguin_puzzle",
-      "book_type_id":4,
-      "assets_need_update":false,
-      "asset_bundle_version":2,
-      "asset_bundle_name":"penguin_puzzle_bundle",
-      "book_cover_path":"penguin_puzzle_cover.jpg",
-      "book_in_app_purchase_id":"empty",
-      "book_paid_type":2,
-      "objects_has_declaration":true,
-      "is_multilang_declaration":false,
-      "has_in_app_purchase":false,
-      "objects":[
-      ]
-    },
-    {
-      "book_id":19,
-      "book_is_published":true,
-      "app_support_version":4,
-      "book_name": "stegosaurus_puzzle",
-      "db_name": "stegosaurus_puzzle",
-      "book_type_id":4,
-      "assets_need_update":false,
-      "asset_bundle_version":1,
-      "asset_bundle_name":"stegosaurus_puzzle_bundle",
-      "book_cover_path":"stegosaurus_puzzle_cover.jpg",
-      "book_in_app_purchase_id":"empty",
-      "book_paid_type":2,
-      "objects_has_declaration":true,
-      "is_multilang_declaration":false,
-      "has_in_app_purchase":false,
-      "objects":[
-      ]
-    },
-
-    {
-      "book_id":20,
-      "book_is_published":true,
-      "app_support_version":4,
-      "book_name": "spinosaurus_puzzle",
-      "db_name": "spinosaurus_puzzle",
-      "book_type_id":4,
-      "assets_need_update":false,
-      "asset_bundle_version":2,
-      "asset_bundle_name":"spinosaurus_puzzle_bundle",
-      "book_cover_path":"spinosaurus_puzzle_cover.jpg",
-      "book_in_app_purchase_id":"empty",
-      "book_paid_type":2,
-      "objects_has_declaration":true,
-      "is_multilang_declaration":false,
-      "has_in_app_purchase":false,
-      "objects":[
-      ]
-    },
-
-    {
-      "book_id":21,
-      "book_is_published":true,
-      "app_support_version":4,
-      "book_name": "learn_with_ar_1_book",
-      "db_name": "learn_with_ar_1_book",
-      "book_type_id":3,
-      "assets_need_update":false,
-      "asset_bundle_version":1,
-      "asset_bundle_name":"learn_with_ar_1_book_bundle",
-      "book_cover_path":"learn_with_ar_1_book_cover.jpg",
-      "book_in_app_purchase_id":"empty",
-      "book_paid_type":2,
-      "objects_has_declaration":true,
-      "is_multilang_declaration":false,
-      "has_in_app_purchase":false,
-      "objects":[
-      ]
-    },
-
     {
       "book_id":22,
       "book_is_published":true,
@@ -401,7 +223,6 @@
       "objects":[
       ]
     },
-
     {
       "book_id":23,
       "book_is_published":true,
@@ -416,7 +237,7 @@
       "book_in_app_purchase_id":"com.colarit.books.abc_book",
       "book_paid_type":2,
       "objects_has_declaration":true,
-      "is_multilang_declaration":false,
+      "is_multilang_declaration":true,
       "has_in_app_purchase":false,
       "objects":[
       ]
@@ -461,144 +282,7 @@
       "objects":[
       ]
     },
-
-    {
-      "book_id":28,
-      "book_is_published":true,
-      "app_support_version":8,
-      "book_name": "demo_encyclopedia",
-      "db_name": "demo_encyclopedia",
-      "book_type_id":1,
-      "assets_need_update":false,
-      "asset_bundle_version":1,
-      "asset_bundle_name":"demo_encyclopedia_bundle",
-      "book_cover_path":"demo_encyclopedia_cover.jpg",
-      "book_in_app_purchase_id":"empty",
-      "book_paid_type":1,
-      "objects_has_declaration":true,
-      "is_multilang_declaration":false,
-      "has_in_app_purchase":false,
-      "objects":[
-      ]
-    },
-    {
-      "book_id":29,
-      "book_is_published":true,
-      "app_support_version":8,
-      "book_name": "funny_pages_vol_1",
-      "db_name": "funny_pages_vol_1",
-      "book_type_id":5,
-      "assets_need_update":false,
-      "asset_bundle_version":1,
-      "asset_bundle_name":"funny_pages_vol_1_bundle",
-      "book_cover_path":"funny_pages_vol_1_cover.jpg",
-      "book_in_app_purchase_id":"empty",
-      "book_paid_type":1,
-      "objects_has_declaration":true,
-      "is_multilang_declaration":false,
-      "has_in_app_purchase":false,
-      "objects":[
-      ]
-    },
-
-    {
-      "book_id":30,
-      "book_is_published":false,
-      "app_support_version":8,
-      "book_name": "znayka_book",
-      "db_name": "znayka_book",
-      "book_type_id":6,
-      "assets_need_update":false,
-      "asset_bundle_version":3,
-      "asset_bundle_name":"znayka_book_bundle",
-      "book_cover_path":"znayka_book_cover.jpg",
-      "book_in_app_purchase_id":"empty",
-      "book_paid_type":1,
-      "objects_has_declaration":true,
-      "is_multilang_declaration":false,
-      "has_in_app_purchase":false,
-      "objects":[
-      ]
-    },
-    {
-      "book_id":31,
-      "book_is_published":false,
-      "app_support_version":10,
-      "book_name": "constitution_book",
-      "db_name": "constitution_book",
-      "book_type_id":6,
-      "assets_need_update":false,
-      "asset_bundle_version":1,
-      "asset_bundle_name":"constitution_book_bundle",
-      "book_cover_path":"constitution_book_cover.jpg",
-      "book_in_app_purchase_id":"empty",
-      "book_paid_type":1,
-      "objects_has_declaration":true,
-      "is_multilang_declaration":false,
-      "has_in_app_purchase":false,
-      "objects":[
-      ]
-    },
-    {
-      "book_id":32,
-      "book_is_published":false,
-      "app_support_version":8,
-      "book_name": "pdd_book",
-      "db_name": "pdd_book",
-      "book_type_id":6,
-      "assets_need_update":false,
-      "asset_bundle_version":1,
-      "asset_bundle_name":"pdd_book_bundle",
-      "book_cover_path":"pdd_book_cover.jpg",
-      "book_in_app_purchase_id":"empty",
-      "book_paid_type":1,
-      "objects_has_declaration":true,
-      "is_multilang_declaration":false,
-      "has_in_app_purchase":false,
-      "objects":[
-      ]
-    },
-
-    {
-      "book_id":33,
-      "book_is_published":false,
-      "app_support_version":8,
-      "book_name": "dono_word_book",
-      "db_name": "dono_word_book",
-      "book_type_id":6,
-      "assets_need_update":false,
-      "asset_bundle_version":3,
-      "asset_bundle_name":"dono_word_book_bundle",
-      "book_cover_path":"dono_word_book_cover.jpg",
-      "book_in_app_purchase_id":"empty",
-      "book_paid_type":1,
-      "objects_has_declaration":true,
-      "is_multilang_declaration":false,
-      "has_in_app_purchase":false,
-      "objects":[
-      ]
-    },
-
-    {
-      "book_id":34,
-      "book_is_published":false,
-      "app_support_version":8,
-      "book_name": "bilimdon_book",
-      "db_name": "bilimdon_book",
-      "book_type_id":6,
-      "assets_need_update":false,
-      "asset_bundle_version":3,
-      "asset_bundle_name":"bilimdon_book_bundle",
-      "book_cover_path":"bilimdon_book_cover.jpg",
-      "book_in_app_purchase_id":"empty",
-      "book_paid_type":1,
-      "objects_has_declaration":true,
-      "is_multilang_declaration":false,
-      "has_in_app_purchase":false,
-      "objects":[
-      ]
-    },
-
+   
     {
       "book_id":35,
       "book_is_published":false,
