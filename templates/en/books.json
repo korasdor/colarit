@@ -3,6 +3,7 @@
   "assets_server":"http://colarit.com/pearkid",
   "langs_path":"http://colarit.com/pearkid/langs/langs.json",
   "instruction_path":"https://pearkid.com",
+  "show_rate_us":false,
   "store_android_path":"https://pearkid.com",
   "store_ios_path":"https://pearkid.com",
   "category_imgs":["education_books_img.jpg","smart_books_img.jpg","coloring_books_img.jpg","free_trial_img.jpg"],
