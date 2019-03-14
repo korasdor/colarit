@@ -6,6 +6,7 @@
   "show_rate_us":false,
   "store_android_path":"https://pearkid.com",
   "store_ios_path":"https://pearkid.com",
+  "init_app_from_category":true,
   "category_imgs":["education_books_img.jpg","smart_books_img.jpg","coloring_books_img.jpg","free_trial_img.jpg"],
   "books": [
     {
