@@ -3,9 +3,9 @@
   "assets_server":"http://colarit.com/pearkid",
   "langs_path":"http://colarit.com/pearkid/langs/langs.json",
   "instruction_path":"https://pearkid.com",
-  "show_rate_us":false,
-  "store_android_path":"https://pearkid.com",
-  "store_ios_path":"https://pearkid.com",
+  "show_rate_us":true,
+  "store_android_path":"https://play.google.com/store/apps/details?id=com.pearkids.PearApp",
+  "store_ios_path":"https://itunes.apple.com/us/app/pear-ar-books/id1455252827",
   "init_app_from_category":true,
   "category_imgs":["education_books_img.jpg","smart_books_img.jpg","coloring_books_img.jpg","free_trial_img.jpg"],
   "books": [
@@ -64,6 +64,26 @@
       "book_paid_type":1,
       "objects_has_declaration":true,
       "is_multilang_declaration":true,
+      "has_in_app_purchase":false,
+      "objects":[
+      ]
+    },
+
+    {
+      "book_id":16,
+      "book_is_published":true,
+      "app_support_version":4,
+      "book_name": "transport_book",
+      "db_name": "transport_book",
+      "book_type_id":3,
+      "assets_need_update":false,
+      "asset_bundle_version":1,
+      "asset_bundle_name":"transport_book_bundle",
+      "book_cover_path":"transport_book_cover.jpg",
+      "book_in_app_purchase_id":"com.colarit.books.transport_book",
+      "book_paid_type":2,
+      "objects_has_declaration":true,
+      "is_multilang_declaration":false,
       "has_in_app_purchase":false,
       "objects":[
       ]
