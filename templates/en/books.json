@@ -107,6 +107,26 @@
       "has_in_app_purchase":false,
       "objects":[
       ]
+    },
+
+    {
+      "book_id":41,
+      "book_is_published":true,
+      "app_support_version":8,
+      "book_name": "water_world_book",
+      "db_name": "water_world_book",
+      "book_type_id":3,
+      "assets_need_update":false,
+      "asset_bundle_version":1,
+      "asset_bundle_name":"water_world_book_bundle",
+      "book_cover_path":"water_world_book_cover.jpg",
+      "book_in_app_purchase_id":"empty",
+      "book_paid_type":1,
+      "objects_has_declaration":true,
+      "is_multilang_declaration":false,
+      "has_in_app_purchase":false,
+      "objects":[
+      ]
     }
   ]
 }
