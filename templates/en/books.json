@@ -81,7 +81,7 @@
       "asset_bundle_name":"transport_book_bundle",
       "book_cover_path":"transport_book_cover.jpg",
       "book_in_app_purchase_id":"com.colarit.books.transport_book",
-      "book_paid_type":2,
+      "book_paid_type":1,
       "objects_has_declaration":true,
       "is_multilang_declaration":false,
       "has_in_app_purchase":false,
